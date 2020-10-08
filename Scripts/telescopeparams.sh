@@ -9,6 +9,7 @@ for cf in 300 800 1400; do
             for chans in 2024 4096; do
 # number of chans
                 echo "cf:$cf  bw:'$bw  tsamp:$tsamp  chans:$chans"
+                # code to run astro accelerate with these params goes here
             done
         done
     done
