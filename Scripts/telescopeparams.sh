@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 for cf in 300 800 1400; do
 # central freq - mhz
     for bw in 50 200 400; do
@@ -15,6 +16,8 @@ for cf in 300 800 1400; do
 		# 3. import ddplan into astro accelerate somehow
 		# 4. profit
 		# 5. run jan's script to check possible combinations of hpc params
+		 # ./profiling-autotune.sh chans-profile.txt
+
 		# 6. save data somewhere usefull with unique names for each run
             done
         done
