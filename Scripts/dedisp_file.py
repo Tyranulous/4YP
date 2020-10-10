@@ -9,7 +9,7 @@ def myexecute(cmd):
     os.system(cmd)
 
 # By default, do not output subbands
-outsubs = False
+outsubs = True
 
 nsub = 256
 
@@ -42,12 +42,14 @@ for dDM, dsubDM, dmspercall, downsamp, subcall, startDM in zip(dDMs, dsubDMs, dm
             datdownsamp = 2
             if downsamp < 2: subdownsamp = datdownsamp = 1
             # First create the subbands
-            myexecute("prepsubband -sub -subdm %.2f -nsub %d -downsamp %d -o %s %s" %
+            print("prepsubband -sub -subdm %.2f -nsub %d -downsamp %d -o %s %s" %
                       (subDM, nsub, subdownsamp, basename, rawfiles))
             # And now create the time series
             subnames = basename+"_DM%.2f.sub[0-9]*"%subDM
-            myexecute("prepsubband -lodm %.2f -dmstep %.2f -numdms %d -downsamp %d -o %s %s" %
+            print("prepsubband -lodm %.2f -dmstep %.2f -numdms %d -downsamp %d -o %s %s" %
                       (loDM, dDM, dmspercall, datdownsamp, basename, subnames))
         else:
-            myexecute("prepsubband -nsub %d -lodm %.2f -dmstep %.2f -numdms %d -downsamp %d -o %s %s" %
+            print("prepsubband -nsub %d -lodm %.2f -dmstep %.2f -numdms %d -downsamp %d -o %s %s/n" %
                       (nsub, loDM, dDM, dmspercall, downsamp, basename, rawfiles))
+            
+    print("outer loop/n/n")
