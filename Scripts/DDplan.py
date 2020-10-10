@@ -604,7 +604,8 @@ from '%s'
         downsamps = [m.downsamp for m in methods]
         dmspercalls = [m.DMs_per_prepsub for m in methods]
         subcalls = [m.numprepsub for m in methods]
-        basename, ext = os.path.splitext(args[0])
+        print("dDMs:%s  dsubDMs:%s  startDMs:%s  downsamps:%s  dmspercalls:%s  subcalls:%s"%dDMs%dsubDMs%startDMs%downsamps%dmspercalls%subcalls)
+'''        basename, ext = os.path.splitext(args[0])
         with open('dedisp_%s.py'%basename, 'w') as f:
             f.write(dedisp_template1)
             f.write("nsub = %d\n\n"%numsubbands)
@@ -636,3 +637,4 @@ dmspercalls = %s\n"""%repr(dmspercalls))
     #obs = observation(0.000250, 1374.0, 288.0, 96)
     #dm_steps(0.0, 500.0, obs) # Create an X-window is the default
     #dm_steps(0.0, 1500.0, obs, device="PKMB_DD.ps/CPS")
+'''
