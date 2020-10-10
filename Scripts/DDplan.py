@@ -604,7 +604,13 @@ from '%s'
         downsamps = [m.downsamp for m in methods]
         dmspercalls = [m.DMs_per_prepsub for m in methods]
         subcalls = [m.numprepsub for m in methods]
-        print("dDMs:%s  dsubDMs:%s  startDMs:%s  downsamps:%s  dmspercalls:%s  subcalls:%s"%dDMs%dsubDMs%startDMs%downsamps%dmspercalls%subcalls)
+        
+       # if args[0] == "--human":
+            # Human readable output format
+#        print("dDMs:%s  dsubDMs:%s  startDMs:%s  downsamps:%s  dmspercalls:%s  subcalls:%s"%(dDMs,dsubDMs,startDMs,downsamps,dmspercalls,subcalls))
+       # else :
+            # Machine readable output
+        print(dDMs,dsubDMs,startDMs,downsamps,dmspercalls,subcalls)
 '''        basename, ext = os.path.splitext(args[0])
         with open('dedisp_%s.py'%basename, 'w') as f:
             f.write(dedisp_template1)
