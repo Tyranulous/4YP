@@ -298,14 +298,8 @@ def dm_steps(loDM, hiDM, obs, cohdm=0.0, numsub=0, ok_smearing=0.0,
         downsamp = allow_downsamps[index_downsamps]
         print("         New dt is %d x %.12g ms = %.12g ms" % \
               (downsamp, dtms, dtms*downsamp))
-<<<<<<< Updated upstream
-
-    # Calculate the appropriate initial dDM 
-=======
-    import pdb; pdb.set_trace()
    
  # Calculate the appropriate initial dDM 
->>>>>>> Stashed changes
     dDM = guess_DMstep(obs.dt*downsamp, obs.BW, obs.f_ctr)
     print("Best guess for optimal initial dDM is %.3f" % dDM)
     while (allow_dDMs[index_dDMs+1] < ff*dDM):
