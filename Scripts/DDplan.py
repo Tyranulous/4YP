@@ -298,8 +298,14 @@ def dm_steps(loDM, hiDM, obs, cohdm=0.0, numsub=0, ok_smearing=0.0,
         downsamp = allow_downsamps[index_downsamps]
         print("         New dt is %d x %.12g ms = %.12g ms" % \
               (downsamp, dtms, dtms*downsamp))
+<<<<<<< Updated upstream
 
     # Calculate the appropriate initial dDM 
+=======
+    import pdb; pdb.set_trace()
+   
+ # Calculate the appropriate initial dDM 
+>>>>>>> Stashed changes
     dDM = guess_DMstep(obs.dt*downsamp, obs.BW, obs.f_ctr)
     print("Best guess for optimal initial dDM is %.3f" % dDM)
     while (allow_dDMs[index_dDMs+1] < ff*dDM):
@@ -604,6 +610,7 @@ from '%s'
         downsamps = [m.downsamp for m in methods]
         dmspercalls = [m.DMs_per_prepsub for m in methods]
         subcalls = [m.numprepsub for m in methods]
+
         
        # if args[0] == "--human":
             # Human readable output format
@@ -612,6 +619,9 @@ from '%s'
             # Machine readable output
         print(dDMs,dsubDMs,startDMs,downsamps,dmspercalls,subcalls)
 '''        basename, ext = os.path.splitext(args[0])
+=======
+        basename, ext = os.path.splitext(args[0])
+>>>>>>> Stashed changes
         with open('dedisp_%s.py'%basename, 'w') as f:
             f.write(dedisp_template1)
             f.write("nsub = %d\n\n"%numsubbands)
@@ -643,4 +653,7 @@ dmspercalls = %s\n"""%repr(dmspercalls))
     #obs = observation(0.000250, 1374.0, 288.0, 96)
     #dm_steps(0.0, 500.0, obs) # Create an X-window is the default
     #dm_steps(0.0, 1500.0, obs, device="PKMB_DD.ps/CPS")
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 '''
