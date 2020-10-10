@@ -570,7 +570,7 @@ from '%s'
         if o in ("-k", "--blocklen"):
             blocklen = int(a)
         if o in ("-t", "--dt"):
-            dt = float(a)
+            dt = float(a)*0.000001
         if o in ("-c", "--cohdm"):
             cDM = float(a)
         if o in ("-s", "--subbands"):
