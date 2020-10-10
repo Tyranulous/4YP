@@ -10,9 +10,19 @@ for cf in 300 800 1400; do
             for chans in 2024 4096; do
 # number of chans
                 echo " ------ Running cf:$cf  bw:'$bw  tsamp:$tsamp  chans:$chans ------"
-                
+                local $t = $tsamp * 0.000001
+
                 # code to run astro accelerate with these params goes here
-                # 1. generate ddplan probably by executing ddplan.py with params -n -b -t -f as the corresponding values
+                # 1. generate ddplan probably by executing ddplan.py with params -n -b -t -f as the corresponding values -w to write to a file
+                ./DDplan.py -f $cf -b $bw -t $t -n $chans >> local $ddplan
+'''
+                for dDM, dsubDM, dmspercall, downsamp, subcall, startDM in zip(dDMs, dsubDMs, dmspercalls, downsamps, subcalls, startDMs):
+                    # Loop over the number of calls
+                    for ii in range(subcall):
+                        subDM = startDM + (ii+0.5)*dsubDM
+                        loDM = startDM + ii*dsubDM
+
+'''
 		            # 2.import telescope params into c file somehow
 	            	# 3. import ddplan into astro accelerate somehow
 		            # 4. profit
