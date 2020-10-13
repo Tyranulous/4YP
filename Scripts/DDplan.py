@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import print_function
 from __future__ import absolute_import
-from builtins import zip
+#from builtins import zip
 import numpy as np
 #from presto.Pgplot import *
 #import presto.filterbank as fil
@@ -32,7 +32,7 @@ class dedisp_method(object):
         self.obs = obs
         self.downsamp = downsamp
         self.loDM = loDM
-        self.dDM = dDM
+        self.dDM = dDMD
         self.numsub = numsub
         self.BW_smearing = BW_smear(dDM, self.obs.BW, self.obs.f_ctr)
         self.numprepsub = 0
@@ -612,6 +612,9 @@ from '%s'
        # else :
             # Machine readable output
         print(dDMs,dsubDMs,startDMs,downsamps,dmspercalls,subcalls)
+        
+        with open("ddplan.dat", 'w') as f:
+            f.write(dDMs+"\n"+dsubDMs+"\n"+startDMs+"\n"+downsamps+"\n"+dmspercalls+"\n"+subcalls)
 '''        basename, ext = os.path.splitext(args[0])
 =======
         basename, ext = os.path.splitext(args[0])
