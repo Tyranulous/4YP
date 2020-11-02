@@ -6,17 +6,29 @@
 
 
 
+#include "aa_ddtr_plan.hpp"
+#include "aa_ddtr_strategy.hpp"
+#include "aa_filterbank_metadata.hpp"
+#include "aa_permitted_pipelines_generic.hpp"
+#include "aa_pipeline_api.hpp"
+#include "aa_device_info.hpp"
+#include "aa_params.hpp"
+#include "aa_log.hpp"
+#include "aa_host_fake_signal_generator.hpp"
+
+#include "aa_sigproc_input.hpp"
+#include "aa_timelog.hpp"
+#include "aa_dedisperse.hpp"
+
+using namespace astroaccelerate;
+
 int main() {
 
 //super dodgey read from file code :/
 
-    std::vector< std::vector<float> > float_array;
+    std::vector<double> data_in;
     std::vector<std::string> num;
-    std::vector<float> pusher;
-
-std::vector<float> temp_idea;
-
-    std::ifstream file("/home/josch/HPC-AI-4YP/branch/4YP/Scripts/test.dat");
+    std::ifstream file("/home/josch/HPC-AI-4YP/branch/astro-accelerate/build/ddplan.dat");
     // Check if object is valid
     if (!file.is_open())
     {
@@ -48,28 +60,25 @@ std::vector<float> temp_idea;
                 std::string substring;
                 // split using commas
                 std::getline(ss,substring,',');
-std::cout<<substring<<std::endl;
                 // cast to type val
                 val = std::stof(substring);
                 //push to pusher for pushing into vector array - this is maybe lazieness because i cba copy pasting this 6 times which in retrospect might have been easier
-                temp_idea.push_back(val);
+                data_in.push_back(val);
             }
-            // push vector to vector
-           // float_array.push_back(pusher);
         }
     }
     //close file
     file.close();
-    
 
-        int length = temp_idea.size();
+
+        int length = data_in.size();
         int num_cols = (length + 1) / 6;
-        std::cout<<"length:"<<length<<"  numcols:"<<num_cols<<std::endl; 
 
-        std::vector<float> dm_step_vector(temp_idea.begin(),(temp_idea.begin() + num_cols));  //float_array[0]; // = {0.1, 0.2, 0.5, 1.0, 2.0};
-        std::vector<double> fch1_vector = {1550};
+        std::vector<float> dm_step_vector(data_in.begin(),(data_in.begin() + num_cols)); // = {0.1, 0.2, 0.5, 1.0, 2.0};
+        std::vector<float> fch1_vector = { JCF + ( JBW / 2 )};
 //      std::vector<double> tsamp_vector = {6.4e-5, 12.8e-5, 25.6e-5, 51.2e-5, 102.4e-5};
-        std::vector<double> tsamp_vector = {25.6e-5};
+//        std::vector<double> tsamp_vector = {25.6e-5};
+        std::vector<float> tsamp_vector = { JTSAMP * 0.000001};
 //        std::vector<int> nchans_vector = {512, 1024, 2048, 4096, 8192};
 //        std::vector<int> ndmtrials_vector = {500, 1000, 1500, 2000, 2500};
         std::vector<unsigned int> nsamples_vector = {468750};
@@ -78,27 +87,42 @@ std::cout<<substring<<std::endl;
 //      std::vector<float> dm_step_vector = {0.1};
 //      std::vector<double> fch1_vector = {1550};
 //      std::vector<double> tsamp_vector = {6.4e-5};
-      std::vector<int> nchans_vector = {4096};
-//      std::vector<float> tempvec = float_array[4];
-      std::vector<int> ndmtrials_vector((temp_idea.begin() + 4 * num_cols),(temp_idea.begin() + 5 * num_cols));//(float_array[3].end(), float_array[4].end()); //= {500};
+        std::vector<int> nchans_vector = { JCHANS };
+        std::vector<int> ndmtrials_vector(num_cols);
+        std::vector<int> subcalls((data_in.begin() + 4 * num_cols), (data_in.begin() + 5 * num_cols)); //= {500};
+        std::vector<int> num_subcalls((data_in.begin() + 5 * num_cols), (data_in.begin() + 6 * num_cols));
+        std::vector<float> low_vector((data_in.begin() + 2 * num_cols), (data_in.begin() + 3 * num_cols));
+        std::vector<int> downsampling((data_in.begin() + 3 * num_cols), (data_in.begin() + 4 * num_cols));
 //      std::vector<unsigned int> nsamples_vector = {28125000};
+        
+        for (int i = 0; i < num_cols; i++){
+                ndmtrials_vector[i]=subcalls[i]*num_subcalls[i];
+
+//                std::cout<<"  subcalls[i]: "<<subcalls[i]<<"  numsubcalls[i]: "<<num_subcalls[i]<<std::endl;
+//std::cout<<" low_vector[i]: "<<low_vector[i]<<"  downsampling[i]: "<<downsampling[i]<<"  dm_step_vector[i]:"<<dm_step_vector[i]<<"  ndmtrials_vector[i]: "<<ndmtrials_vector[i]<<std::endl;
+        }
+         
 
 
-   for (int ndmtrials : ndmtrials_vector){
-                std::cout<<"ndmtrials:"<<ndmtrials<<std::endl;
-   }
-   /*    
+
         for (unsigned int comp_nsamples : nsamples_vector){
         for (double fch1 : fch1_vector){
         for (int nchans : nchans_vector){
         for (double tsamp : tsamp_vector){
-        for (float dm_step : dm_step_vector){
-        for (int ndmtrials : ndmtrials_vector){
-                std::cout<<"ndmtrials:"<<ndmtrials;
-                std::cout<<"  dm_step:"<<dm_step;
-                std::cout<<"  tsamp:"<<tsamp<<std::endl;
-        }}}}}}
- /*       //-----------------------  Init the GPU card
+//        for (float dm_step : dm_step_vector){
+//        for (int ndmtrials : ndmtrials_vector){
+
+//if reverting change vectors of ndmtrials and 
+
+      for (int i = 0; i < num_cols; i++){  
+
+//sanity check
+//std::cout<<"  subcalls[i]: "<<subcalls[i]<<"  numsubcalls[i]: "<<num_subcalls[i]<<std::endl;
+//std::cout<<" low_vector[i]: "<<low_vector[i]<<"  downsampling[i]: "<<downsampling[i]<<"  dm_step_vector[i]:"<<dm_step_vector[i]<<"  ndmtrials_vector[i]: "<<ndmtrials_vector[i]<<std::endl;
+
+
+        //-----------------------  Init the GPU card
+ 
         aa_device_info& device_info = aa_device_info::instance();
         if(device_info.check_for_devices()) {
                 LOG(log_level::notice, "Checked for devices.");
@@ -120,15 +144,22 @@ std::cout<<substring<<std::endl;
         //-------------------------------------------
 
         //-------- Define user DM plan 
-
+                        float low;
+                        low = low_vector[i];
                         aa_ddtr_plan ddtr_plan;
                         float high;
-                        high = dm_step*(float)ndmtrials;
-                        ddtr_plan.add_dm(0, high, dm_step, 1, 1); // Add dm_ranges: dm_low, dm_high, dm_step, inBin, outBin (unused).
+                        high = low + dm_step_vector[i]*(float)ndmtrials_vector[i];
+                        int inbin = 1;//downsampling[i];
+
+                        //josch code
+                        
+                        
+                        
+                        ddtr_plan.add_dm(low, high, dm_step_vector[i], inbin, inbin); // Add dm_ranges: dm_low, dm_high, dm_step, inBin, outBin (unused).
 
                         // Filterbank metadata
                         const double tstart = 50000;
-                        const double total_bandwidth = 300.0f;
+                        const double total_bandwidth = JBW;
                         const double nbits = 8;
 //                      const unsigned int nsamples = 30.0/tsamp;
                         const unsigned int nsamples = comp_nsamples;
@@ -193,20 +224,23 @@ std::cout<<substring<<std::endl;
                         TimeLog timelog;
                         TimeLog::maptype times;
                         size_t nTprocessed = strategy.nProcessedTimesamples();
-                        timelog.print_to_file_all(fch1 - total_bandwidth/2.0, tsamp, nchans, dm_step, ndms, nTprocessed, UNROLLS, SNUMREG, SDIVINT, SDIVINDM, id.get());
+                        timelog.print_to_file_all(fch1 - total_bandwidth/2.0, tsamp, nchans, dm_step_vector[i], ndms, nTprocessed, UNROLLS, SNUMREG, SDIVINT, SDIVINDM, id.get());
 
                         signal.print_info(f_meta);
                         strategy.print_info(strategy);
 
                         LOG(log_level::notice, "Finished. " + std::to_string(id.get()));
                         LOG(log_level::notice, "----------------------------------------------------------------------------------------------------------");
-                }// ndmtrials 
-	        } // dm_step
+
+
+//                }// ndmtrials 
+//	        } // dm_step
+        } //i (cols)
         } //tsamp
         } //nchans
         } // fch1
         } // comp_nsamples
-*/
+
         return 0;
 }
 

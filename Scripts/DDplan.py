@@ -32,7 +32,7 @@ class dedisp_method(object):
         self.obs = obs
         self.downsamp = downsamp
         self.loDM = loDM
-        self.dDM = dDMD
+        self.dDM = dDM
         self.numsub = numsub
         self.BW_smearing = BW_smear(dDM, self.obs.BW, self.obs.f_ctr)
         self.numprepsub = 0
@@ -614,7 +614,13 @@ from '%s'
         print(dDMs,dsubDMs,startDMs,downsamps,dmspercalls,subcalls)
         
         with open("ddplan.dat", 'w') as f:
-            f.write(dDMs+"\n"+dsubDMs+"\n"+startDMs+"\n"+downsamps+"\n"+dmspercalls+"\n"+subcalls)
+            f.write("%s\n"%repr(dDMs))
+            
+            f.write("%s\n"%repr(dsubDMs))
+            f.write("%s\n"%repr(startDMs))
+            f.write("%s\n"%repr(downsamps))
+            f.write("%s\n"%repr(dmspercalls))
+            f.write("%s\n"%repr(subcalls))
 '''        basename, ext = os.path.splitext(args[0])
 =======
         basename, ext = os.path.splitext(args[0])
