@@ -86,7 +86,7 @@ for i = 1:length(datain)
         values(bigi) = datain(i).time_logs(log_i,14);
         bigi = bigi+1;
     end
-    norm_vals = [norm_vals',n
+    %norm_vals = [norm_vals',n
 end
 
 %x(find(x,1,'first'):find(x,1,'last'))
