@@ -11,6 +11,7 @@ datain.optimal_params = [];
 datain.divint = [];
 datain.bw = [];
 
+
 i = 3;
     if folders(i).isdir == 1 && not(strcmp('cf-1400__bw-__tsamp-0.000256__chans-4096',folders(i).name))
         path=folders(i).name; 
