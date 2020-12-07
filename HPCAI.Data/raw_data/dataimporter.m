@@ -91,6 +91,8 @@ for i = 4:(length(folders)-2)
         datain(index).chans = datain(index).time_logs(1,8);
     end
 end
+
+
 validation(1) = datain(34);
 validation(2) = datain(35);
 
@@ -112,10 +114,14 @@ for i = 1:length(datain)
     %    labels(i) = datain(i).optimal_params(1,4);
     features(i,49:50) = datain(i).optimal_params(1,2:3);
 end
-fullfeatures = zeros(length(datain)*275,50);
+fullfeatures = nan(length(datain)*275,50);
 values = zeros(length(datain)*275,1);
 bigi = 1;
+norm_vals = [];
+valls = [];
+fullfeatures_nodm = zeros(length(datain)*27,9);
 for i = 1:length(datain)
+    
     for log_i = 1:size(datain(i).time_logs,1)
         
         %dm plan
@@ -123,19 +129,23 @@ for i = 1:length(datain)
         
         %temp features vector to allow for zeros easily
         tempfeatures =  [datain(i).time_logs(log_i,6:8), datain(i).bw, flatdm];
+        tempfeatures2 = [datain(i).time_logs(log_i,6:8), datain(i).bw,datain(i).time_logs(log_i,1:5)];
         fullfeatures(bigi,1:length(tempfeatures)) = tempfeatures;
+        fullfeatures_nodm(bigi,1:length(tempfeatures2)) = tempfeatures2;
         
         %add hpc params to features
         fullfeatures(bigi,46:50) = datain(i).time_logs(log_i,1:5);
         %normalised_temp(log_i) = datain(i).time_logs(log_i,14);
-        values(bigi) = datain(i).time_logs(log_i,14);
+        %values(bigi) = datain(i).time(log_i);
         bigi = bigi+1;
     end
+    valls = [valls; datain(i).time./datain(i).time_logs(:,11)];
+    norm_vals = [norm_vals; normalize(datain(i).time./datain(i).time_logs(:,11))];
     %norm_vals = [norm_vals',n
 end
 
 %normalize values
-norm_vals = normalize(values);
+%norm_vals = normalize(values);
 
 %x(find(x,1,'first'):find(x,1,'last'))
 
