@@ -48,8 +48,8 @@ for i=1:length(datain)
         plotting(1:length(temp),i) = temp;%datain(i).speedup(:) ./ datain(i).samples(:);
     %plotting(plotting < 2e-5) = nan;
     %normplot = normalize(plotting);
-    if any(datain(i).time_logs(:,1) ~= 1)
-    "!"
-    end
+%     if any(datain(i).time_logs(:,1) ~= 1)
+%     "!"
+%     end
     
 end

@@ -110,10 +110,21 @@ for i = 4:(length(folders)-2)
         [~,datain(index).speedup] = txt_importer(path);
         
         datain(index).chans = datain(index).time_logs(1,8);
+        
+        
+        % temporaty code to remove non full runs, will probably have to
+        % change at some point in the future 
+        if size(datain(index).time_logs,1) ~= 275
+            datain(index) = [];
+        end
     end
 end
 
+for i = 1:length(datain)
+   datain(i).speedup 
+end
 
+            
 %validation(1) = datain(34);
 %validation(2) = datain(35);
 
