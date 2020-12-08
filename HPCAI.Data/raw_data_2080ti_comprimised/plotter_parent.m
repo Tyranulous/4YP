@@ -88,11 +88,11 @@ end
 subplot(1,2,1)
 scatter(best_delta_samps(:,1),percentage_diff2(:))
 xlabel('Central Freq')
-ylabel('% Difference in Dedispersion time')
+ylabel('% Difference in Dedispersion time between best and 4-14-8-64')
 subplot(1,2,2)
 scatter(best_delta_samps(:,1),percentage_diff1(:))
 xlabel('Central Freq')
-ylabel('% Difference in Dedispersion time per sample')
+ylabel('% Difference in Dedispersion time per sample between best and 4-14-8-64')
 
 
 
