@@ -2,7 +2,7 @@
 for d in ./*/; do
   cd "$d"
   pwd
-  sed '/^#/d' time.log > ./timenohash.txt
+  sed '/^#/d' *.log > ./timenohash.txt
 #  for file in *.dat ; do
     #echo test
     #echo "$file"
