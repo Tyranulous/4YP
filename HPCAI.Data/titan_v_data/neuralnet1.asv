@@ -23,10 +23,10 @@ net = network(50,4);
 %dataimporter.m
 
 divdm_layers = [
-    featureInputLayer(8)%potential to name input features here if it might help
+    featureInputLayer(9)%potential to name input features here if it might help
     fullyConnectedLayer(25)
     reluLayer
-    fullyConnectedLayer(15)
+    fullyConnectedLayer(25)
     reluLayer
     fullyConnectedLayer(2)
     softmaxLayer
@@ -51,6 +51,6 @@ acc_layers = [
 %}
 
 
-trainopts = trainingOptions('adam','InitialLearnRate',0.001,'Plots','training-progress','ValidationData',{Xvalidation,Yvalidation});
-net2 = trainNetwork(features_,vals_,divdm_layers,trainopts);
+trainopts = trainingOptions('sgdm','InitialLearnRate',0.001,'Plots','training-progress');
+net2 = trainNetwork(features,binary_vals,divdm_layers,trainopts);
     

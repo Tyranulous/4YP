@@ -1,7 +1,7 @@
 function plotter_parent(data)
 
-%histogram_plotter(data);
-best_v_273(data);
+histogram_plotter(data);
+%best_v_273(data);
 
 end
 
