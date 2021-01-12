@@ -1,0 +1,965 @@
+Jan 12 07:26:00 2021 - NOTICE   Detected 1 CUDA Capable device(s)
+Jan 12 07:26:00 2021 - NOTICE   Device info 0 free 11391139840 (GeForce RTX 2080 Ti)
+Jan 12 07:26:00 2021 - NOTICE   Checked for devices.
+Jan 12 07:26:00 2021 - NOTICE   Application binary compiled for compute capability 75.
+Jan 12 07:26:00 2021 - NOTICE   The requested device has capability 75 and the device code was compiled for a compatible architecture for the selected card.
+Jan 12 07:26:00 2021 - NOTICE   init_card complete. Selected card 0.
+Jan 12 07:26:00 2021 - DEBUG    CARD INFORMATION:
+Jan 12 07:26:00 2021 - DEBUG    Name:			GeForce RTX 2080 Ti
+Jan 12 07:26:00 2021 - DEBUG    Compute capability:	7.5
+Jan 12 07:26:00 2021 - DEBUG    Clock rate [kHz]:	1650000.000000
+Jan 12 07:26:00 2021 - DEBUG    Memory clock rate [kHz]:	7000000.000000
+Jan 12 07:26:00 2021 - DEBUG    Memory bus width [bits]:	352.000000
+Jan 12 07:26:00 2021 - DEBUG    ID # on this machine:	0
+Jan 12 07:26:00 2021 - DEBUG    Driver version:		11010
+Jan 12 07:26:00 2021 - DEBUG    l2_cache_size [bytes]:	5767168
+Jan 12 07:26:00 2021 - DEBUG    Global memory [bytes]:	11554717696
+Jan 12 07:26:00 2021 - DEBUG    Total memory [bytes]:	11554717696
+Jan 12 07:26:00 2021 - DEBUG    Free memory [bytes]:	11391139840
+Jan 12 07:26:00 2021 - NOTICE   Calculating strategy.
+Jan 12 07:26:00 2021 - DEBUG    Maximum number of dm trials in any of the range steps: 3800
+Jan 12 07:26:00 2021 - DEBUG    Range:	5 MAXSHIFT:	396432 Scrunch value:	32
+Jan 12 07:26:00 2021 - DEBUG    Maximum dispersive delay:	 12.685824(s).
+Jan 12 07:26:00 2021 - DEBUG    Diagonal DM:	13.295323
+Jan 12 07:26:00 2021 - DEBUG    In 4
+Jan 12 07:26:02 2021 - NOTICE   The pipeline has reset all previously requested memory on card 0.
+Jan 12 07:26:02 2021 - NOTICE   Calculating strategy.
+Jan 12 07:26:02 2021 - DEBUG    Maximum number of dm trials in any of the range steps: 3800
+Jan 12 07:26:02 2021 - DEBUG    Range:	5 MAXSHIFT:	396432 Scrunch value:	32
+Jan 12 07:26:02 2021 - DEBUG    Maximum dispersive delay:	 12.685824(s).
+Jan 12 07:26:02 2021 - DEBUG    Diagonal DM:	13.295323
+Jan 12 07:26:02 2021 - DEBUG    In 4
+Jan 12 07:26:02 2021 - NOTICE   Neither zero_dm nor zero_dm_with_outliers were selected. Selection OFF.
+Jan 12 07:26:02 2021 - NOTICE   ---PIPELINE DIAGNOSTIC INFORMATION---
+Jan 12 07:26:02 2021 - DEBUG    CARD INFORMATION:
+Jan 12 07:26:02 2021 - DEBUG    Name:			GeForce RTX 2080 Ti
+Jan 12 07:26:02 2021 - DEBUG    Compute capability:	7.5
+Jan 12 07:26:02 2021 - DEBUG    Clock rate [kHz]:	1650000.000000
+Jan 12 07:26:02 2021 - DEBUG    Memory clock rate [kHz]:	7000000.000000
+Jan 12 07:26:02 2021 - DEBUG    Memory bus width [bits]:	352.000000
+Jan 12 07:26:02 2021 - DEBUG    ID # on this machine:	0
+Jan 12 07:26:02 2021 - DEBUG    Driver version:		11010
+Jan 12 07:26:02 2021 - DEBUG    l2_cache_size [bytes]:	5767168
+Jan 12 07:26:02 2021 - DEBUG    Global memory [bytes]:	11554717696
+Jan 12 07:26:02 2021 - DEBUG    Total memory [bytes]:	11554717696
+Jan 12 07:26:02 2021 - DEBUG    Free memory [bytes]:	11391139840
+Jan 12 07:26:02 2021 - DEBUG    FILTERBANK METADATA INFORMATION:
+Jan 12 07:26:02 2021 - DEBUG    az_start:		0.000000
+Jan 12 07:26:02 2021 - DEBUG    za_start:		0.000000
+Jan 12 07:26:02 2021 - DEBUG    src_raj:			0.000000
+Jan 12 07:26:02 2021 - DEBUG    src_dej:			0.000000
+Jan 12 07:26:02 2021 - DEBUG    tstart:			50000.000000
+Jan 12 07:26:02 2021 - DEBUG    tsamp:			0.000032
+Jan 12 07:26:02 2021 - DEBUG    refdm:			0.000000
+Jan 12 07:26:02 2021 - DEBUG    period:			0.000000
+Jan 12 07:26:02 2021 - DEBUG    fch1:			680.000000
+Jan 12 07:26:02 2021 - DEBUG    foff:			-0.053711
+Jan 12 07:26:02 2021 - DEBUG    fchannel:		0.000000
+Jan 12 07:26:02 2021 - DEBUG    telescope_id:		0
+Jan 12 07:26:02 2021 - DEBUG    machine_id:		0
+Jan 12 07:26:02 2021 - DEBUG    data_type:		0
+Jan 12 07:26:02 2021 - DEBUG    barycentric:		0
+Jan 12 07:26:02 2021 - DEBUG    pulsarcentric:		0
+Jan 12 07:26:02 2021 - DEBUG    nbits:			8
+Jan 12 07:26:02 2021 - DEBUG    nsamples:		781250
+Jan 12 07:26:02 2021 - DEBUG    nchans:			4096
+Jan 12 07:26:02 2021 - DEBUG    nifs:			0
+Jan 12 07:26:02 2021 - DEBUG    FREQUENCY_START:		0
+Jan 12 07:26:02 2021 - DEBUG    FREQUENCY_END:		0
+Jan 12 07:26:02 2021 - DEBUG    rawdatafile:		
+Jan 12 07:26:02 2021 - DEBUG    source_name:		
+Jan 12 07:26:02 2021 - DEBUG    N:			0
+Jan 12 07:26:02 2021 - DEBUG    DDTR STRATEGY INFORMATION:
+Jan 12 07:26:02 2021 - DEBUG    Optimization settings:
+Jan 12 07:26:02 2021 - DEBUG    		UNROLL:			4
+Jan 12 07:26:02 2021 - DEBUG    		SNUMREG:		6
+Jan 12 07:26:02 2021 - DEBUG    		SDIVINT:		12
+Jan 12 07:26:02 2021 - DEBUG    		SDIVINDM:		40
+Jan 12 07:26:02 2021 - DEBUG    ddtr+analysis:		false
+Jan 12 07:26:02 2021 - DEBUG    ddtr dm ranges:		6
+Jan 12 07:26:02 2021 - DEBUG         dm (low,high,step,inBin,outBin) 0.000000,60.800003,0.016000,1,1
+Jan 12 07:26:02 2021 - DEBUG         dm (low,high,step,inBin,outBin) 60.800003,81.480003,0.011000,2,2
+Jan 12 07:26:02 2021 - DEBUG         dm (low,high,step,inBin,outBin) 81.480003,187.320007,0.042000,4,4
+Jan 12 07:26:02 2021 - DEBUG         dm (low,high,step,inBin,outBin) 187.320007,340.400024,0.043000,8,8
+Jan 12 07:26:02 2021 - DEBUG         dm (low,high,step,inBin,outBin) 340.400024,694.000000,0.170000,16,16
+Jan 12 07:26:02 2021 - DEBUG         dm (low,high,step,inBin,outBin) 694.000000,1186.800049,0.160000,32,32
+Jan 12 07:26:02 2021 - DEBUG    ddtr max_ndms:		3800
+Jan 12 07:26:02 2021 - DEBUG    ddtr ndms elements:
+Jan 12 07:26:02 2021 - DEBUG         ndms[0]:		3800
+Jan 12 07:26:02 2021 - DEBUG         ndms[1]:		1880
+Jan 12 07:26:02 2021 - DEBUG         ndms[2]:		2520
+Jan 12 07:26:02 2021 - DEBUG         ndms[3]:		3560
+Jan 12 07:26:02 2021 - DEBUG         ndms[4]:		2080
+Jan 12 07:26:02 2021 - DEBUG         ndms[5]:		3080
+Jan 12 07:26:02 2021 - DEBUG    ddtr maxshift:		396432
+Jan 12 07:26:02 2021 - DEBUG    ddtr num_tchunks:	7
+Jan 12 07:26:02 2021 - DEBUG    ddtr max_ndms:		3800
+Jan 12 07:26:02 2021 - DEBUG    t_processed size:	6
+Jan 12 07:26:02 2021 - DEBUG    t_processed elements:
+Jan 12 07:26:02 2021 - DEBUG         t_processed[0][0]:	59904
+Jan 12 07:26:02 2021 - DEBUG         t_processed[0][1]:	59904
+Jan 12 07:26:02 2021 - DEBUG         t_processed[0][2]:	59904
+Jan 12 07:26:02 2021 - DEBUG         t_processed[0][3]:	59904
+Jan 12 07:26:02 2021 - DEBUG         t_processed[0][4]:	59904
+Jan 12 07:26:02 2021 - DEBUG         t_processed[0][5]:	59904
+Jan 12 07:26:02 2021 - DEBUG         t_processed[0][6]:	23040
+Jan 12 07:26:02 2021 - DEBUG         t_processed[1][0]:	29952
+Jan 12 07:26:02 2021 - DEBUG         t_processed[1][1]:	29952
+Jan 12 07:26:02 2021 - DEBUG         t_processed[1][2]:	29952
+Jan 12 07:26:02 2021 - DEBUG         t_processed[1][3]:	29952
+Jan 12 07:26:02 2021 - DEBUG         t_processed[1][4]:	29952
+Jan 12 07:26:02 2021 - DEBUG         t_processed[1][5]:	29952
+Jan 12 07:26:02 2021 - DEBUG         t_processed[1][6]:	11520
+Jan 12 07:26:02 2021 - DEBUG         t_processed[2][0]:	14976
+Jan 12 07:26:02 2021 - DEBUG         t_processed[2][1]:	14976
+Jan 12 07:26:02 2021 - DEBUG         t_processed[2][2]:	14976
+Jan 12 07:26:02 2021 - DEBUG         t_processed[2][3]:	14976
+Jan 12 07:26:02 2021 - DEBUG         t_processed[2][4]:	14976
+Jan 12 07:26:02 2021 - DEBUG         t_processed[2][5]:	14976
+Jan 12 07:26:02 2021 - DEBUG         t_processed[2][6]:	5760
+Jan 12 07:26:02 2021 - DEBUG         t_processed[3][0]:	7488
+Jan 12 07:26:02 2021 - DEBUG         t_processed[3][1]:	7488
+Jan 12 07:26:02 2021 - DEBUG         t_processed[3][2]:	7488
+Jan 12 07:26:02 2021 - DEBUG         t_processed[3][3]:	7488
+Jan 12 07:26:02 2021 - DEBUG         t_processed[3][4]:	7488
+Jan 12 07:26:02 2021 - DEBUG         t_processed[3][5]:	7488
+Jan 12 07:26:02 2021 - DEBUG         t_processed[3][6]:	2880
+Jan 12 07:26:02 2021 - DEBUG         t_processed[4][0]:	3744
+Jan 12 07:26:02 2021 - DEBUG         t_processed[4][1]:	3744
+Jan 12 07:26:02 2021 - DEBUG         t_processed[4][2]:	3744
+Jan 12 07:26:02 2021 - DEBUG         t_processed[4][3]:	3744
+Jan 12 07:26:02 2021 - DEBUG         t_processed[4][4]:	3744
+Jan 12 07:26:02 2021 - DEBUG         t_processed[4][5]:	3744
+Jan 12 07:26:02 2021 - DEBUG         t_processed[4][6]:	1440
+Jan 12 07:26:02 2021 - DEBUG         t_processed[5][0]:	1872
+Jan 12 07:26:02 2021 - DEBUG         t_processed[5][1]:	1872
+Jan 12 07:26:02 2021 - DEBUG         t_processed[5][2]:	1872
+Jan 12 07:26:02 2021 - DEBUG         t_processed[5][3]:	1872
+Jan 12 07:26:02 2021 - DEBUG         t_processed[5][4]:	1872
+Jan 12 07:26:02 2021 - DEBUG         t_processed[5][5]:	1872
+Jan 12 07:26:02 2021 - DEBUG         t_processed[5][6]:	720
+Jan 12 07:26:02 2021 - DEBUG    power:			2.000000
+Jan 12 07:26:02 2021 - NOTICE   Pipeline is ready.
+Jan 12 07:26:02 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:05 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:05 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:06 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:06 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:06 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:06 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:09 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:09 2021 - NOTICE   Pipeline running over next chunk.
+gpu_memory: 11286282240. Maximum number of tsamp: 459240. SPDT: 0 max_ndms: 3800
+output_sizePer_chunk: 7524188160
+After check tsamp_max: 459240
+
+NOTICE: Maxshift memory needed:	3097 MB.
+NOTICE: Output memory needed:	6194 MB.
+gpu_memory: 11286282240. Maximum number of tsamp: 459240. SPDT: 0 max_ndms: 3800
+output_sizePer_chunk: 7524188160
+After check tsamp_max: 459240
+
+NOTICE: Maxshift memory needed:	3097 MB.
+NOTICE: Output memory needed:	6194 MB.
+
+
+Memory allocation for the DDTR
+Number of time samples: 59904;
+maxshift: 396432
+Number of time samples + maxshift: 456336;
+Number of channels: 4096
+Maximum number of DM-trials: 3800;
+Available memory: 11386945536 bytes = 10859.438 MB;
+DDTR input size: 3738304512 bytes = 3565.125 MB;
+DDTR output size:  7476609024 bytes = 7130.250 MB;
+Total memory required: 11214913536 bytes = 10695.375 MB;
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+NOTICE: t_processed:	59904, 0
+CORNER TURN!
+456336 4096
+32 8
+14260 512
+Performed CT: 0.082979 (GPU estimate)
+CT Gops based on 10.00 ops per channel per tsamp: 225.248669
+CT Device memory bandwidth in GB/s: 135.149201
+
+NOTICE: 0.000000	60.800003	0.016000	3800
+
+Amount of telescope time processed: 0.000000
+
+500.000031
+0.010630
+229
+lineshift:	349
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 7 and range 0 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 60.800003	81.480003	0.011000	1880
+
+Amount of telescope time processed: 0.000000
+timesamples: 456336
+
+171.875000
+0.010630
+93
+lineshift:	213
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 7 and range 1 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 81.480003	187.320007	0.042000	2520
+
+Amount of telescope time processed: 0.000000
+timesamples: 426384
+
+328.125000
+0.010630
+158
+lineshift:	278
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 7 and range 2 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 187.320007	340.400024	0.043000	3560
+
+Amount of telescope time processed: 0.000000
+timesamples: 411408
+
+167.968750
+0.010630
+91
+lineshift:	211
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 7 and range 3 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 340.400024	694.000000	0.170000	2080
+
+Amount of telescope time processed: 0.000000
+timesamples: 403920
+
+332.031250
+0.010630
+159
+lineshift:	279
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 7 and range 4 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 694.000000	1186.800049	0.160000	3080
+
+Amount of telescope time processed: 0.000000
+timesamples: 400160
+
+156.250000
+0.010630
+86
+lineshift:	206
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 7 and range 5 / 6.
+
+NOTICE: INC:	59904
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+NOTICE: t_processed:	59904, 1
+CORNER TURN!
+456336 4096
+32 8
+14260 512
+Performed CT: 0.082945 (GPU estimate)
+CT Gops based on 10.00 ops per channel per tsamp: 225.341116
+CT Device memory bandwidth in GB/s: 135.204669
+
+NOTICE: 0.000000	60.800003	0.016000	3800
+
+Amount of telescope time processed: 1.916928
+
+500.000031
+0.010630
+229
+lineshift:	349
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 1 / 7 and range 0 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 60.800003	81.480003	0.011000	1880
+
+Amount of telescope time processed: 1.916928
+timesamples: 456336
+
+171.875000
+0.010630
+93
+lineshift:	213
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 1 / 7 and range 1 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 81.480003	187.320007	0.042000	2520
+
+Amount of telescope time processed: 1.916928
+timesamples: 426384
+
+328.125000
+0.010630
+158
+lineshift:	278
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunkJan 12 07:26:09 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:09 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:09 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:09 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:12 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:13 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:13 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:13 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:13 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:13 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:16 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:16 2021 - NOTICE   Pipeline running over next chunk.
+ 1 / 7 and range 2 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 187.320007	340.400024	0.043000	3560
+
+Amount of telescope time processed: 1.916928
+timesamples: 411408
+
+167.968750
+0.010630
+91
+lineshift:	211
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 1 / 7 and range 3 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 340.400024	694.000000	0.170000	2080
+
+Amount of telescope time processed: 1.916928
+timesamples: 403920
+
+332.031250
+0.010630
+159
+lineshift:	279
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 1 / 7 and range 4 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 694.000000	1186.800049	0.160000	3080
+
+Amount of telescope time processed: 1.916928
+timesamples: 400160
+
+156.250000
+0.010630
+86
+lineshift:	206
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 1 / 7 and range 5 / 6.
+
+NOTICE: INC:	119808
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+NOTICE: t_processed:	59904, 2
+CORNER TURN!
+456336 4096
+32 8
+14260 512
+Performed CT: 0.082954 (GPU estimate)
+CT Gops based on 10.00 ops per channel per tsamp: 225.317054
+CT Device memory bandwidth in GB/s: 135.190232
+
+NOTICE: 0.000000	60.800003	0.016000	3800
+
+Amount of telescope time processed: 3.833856
+
+500.000031
+0.010630
+229
+lineshift:	349
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 2 / 7 and range 0 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 60.800003	81.480003	0.011000	1880
+
+Amount of telescope time processed: 3.833856
+timesamples: 456336
+
+171.875000
+0.010630
+93
+lineshift:	213
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 2 / 7 and range 1 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 81.480003	187.320007	0.042000	2520
+
+Amount of telescope time processed: 3.833856
+timesamples: 426384
+
+328.125000
+0.010630
+158
+lineshift:	278
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 2 / 7 and range 2 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 187.320007	340.400024	0.043000	3560
+
+Amount of telescope time processed: 3.833856
+timesamples: 411408
+
+167.968750
+0.010630
+91
+lineshift:	211
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 2 / 7 and range 3 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 340.400024	694.000000	0.170000	2080
+
+Amount of telescope time processed: 3.833856
+timesamples: 403920
+
+332.031250
+0.010630
+159
+lineshift:	279
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 2 / 7 and range 4 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 694.000000	1186.800049	0.160000	3080
+
+Amount of telescope time processed: 3.833856
+timesamples: 400160
+
+156.250000
+0.010630
+86
+lineshift:	206
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 2 / 7 and range 5 / 6.
+
+NOTICE: INC:	179712
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+NOTICE: t_processed:	59904, 3
+CORNER TURN!
+456336 4096
+32 8
+14260 512
+Performed CT: 0.082940 (GPU estimate)
+CT Gops based on 10.00 ops per channel per tsamp: 225.354340
+CT Device memory bandwidth in GB/s: 135.212604
+
+NOTICE: 0.000000	60.800003	0.016000	3800
+
+Amount of telescope time processed: 5.750784
+
+500.000031
+0.010630
+229
+lineshift:	349
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 3 / 7 and range 0 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 60.800003	81.480003	0.011000	1880
+
+Amount of telescope time processed: 5.750784
+timesamples: 456336
+
+171.875000
+0.010630
+93
+lineshift:	213
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 3 / 7 and range 1 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 81.480003	187.320007	0.042000	2520
+
+Amount of telescope time processed:Jan 12 07:26:16 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:16 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:16 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:16 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:19 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:20 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:20 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:20 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:20 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:20 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:23 2021 - NOTICE   Pipeline running over next chunk.
+ 5.750784
+timesamples: 426384
+
+328.125000
+0.010630
+158
+lineshift:	278
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 3 / 7 and range 2 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 187.320007	340.400024	0.043000	3560
+
+Amount of telescope time processed: 5.750784
+timesamples: 411408
+
+167.968750
+0.010630
+91
+lineshift:	211
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 3 / 7 and range 3 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 340.400024	694.000000	0.170000	2080
+
+Amount of telescope time processed: 5.750784
+timesamples: 403920
+
+332.031250
+0.010630
+159
+lineshift:	279
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 3 / 7 and range 4 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 694.000000	1186.800049	0.160000	3080
+
+Amount of telescope time processed: 5.750784
+timesamples: 400160
+
+156.250000
+0.010630
+86
+lineshift:	206
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 3 / 7 and range 5 / 6.
+
+NOTICE: INC:	239616
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+NOTICE: t_processed:	59904, 4
+CORNER TURN!
+456336 4096
+32 8
+14260 512
+Performed CT: 0.082940 (GPU estimate)
+CT Gops based on 10.00 ops per channel per tsamp: 225.354340
+CT Device memory bandwidth in GB/s: 135.212604
+
+NOTICE: 0.000000	60.800003	0.016000	3800
+
+Amount of telescope time processed: 7.667712
+
+500.000031
+0.010630
+229
+lineshift:	349
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 4 / 7 and range 0 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 60.800003	81.480003	0.011000	1880
+
+Amount of telescope time processed: 7.667712
+timesamples: 456336
+
+171.875000
+0.010630
+93
+lineshift:	213
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 4 / 7 and range 1 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 81.480003	187.320007	0.042000	2520
+
+Amount of telescope time processed: 7.667712
+timesamples: 426384
+
+328.125000
+0.010630
+158
+lineshift:	278
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 4 / 7 and range 2 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 187.320007	340.400024	0.043000	3560
+
+Amount of telescope time processed: 7.667712
+timesamples: 411408
+
+167.968750
+0.010630
+91
+lineshift:	211
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 4 / 7 and range 3 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 340.400024	694.000000	0.170000	2080
+
+Amount of telescope time processed: 7.667712
+timesamples: 403920
+
+332.031250
+0.010630
+159
+lineshift:	279
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 4 / 7 and range 4 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 694.000000	1186.800049	0.160000	3080
+
+Amount of telescope time processed: 7.667712
+timesamples: 400160
+
+156.250000
+0.010630
+86
+lineshift:	206
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 4 / 7 and range 5 / 6.
+
+NOTICE: INC:	299520
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+NOTICE: t_processed:	59904, 5
+CORNER TURN!
+456336 4096
+32 8
+14260 512
+Performed CT: 0.082930 (GPU estimate)
+CT Gops based on 10.00 ops per channel per tsamp: 225.381562
+CT Device memory bandwidth in GB/s: 135.228937
+
+NOTICE: 0.000000	60.800003	0.016000	3800
+
+Amount of telescope time processed: 9.584640
+
+500.000031
+0.010630
+229
+lineshift:	349
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 5 / 7 and range 0 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 60.800003	81.480003	0.011000	1880
+
+Amount of telescope time processed: 9.584640
+timesamples: 456336
+
+171.875000
+0.010630
+93
+lineshift:	213
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over Jan 12 07:26:23 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:23 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:23 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:23 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:24 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:26 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:26 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:26 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:26 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:26 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:26 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:26 2021 - DEBUG    DDTR -> Memory cleanup after de-dispersion
+Jan 12 07:26:26 2021 - NOTICE   Pipeline running over next chunk.
+Jan 12 07:26:26 2021 - DEBUG    ------------------------------------------------------------->
+Jan 12 07:26:26 2021 - DEBUG    FAKE SIGNAL INFORMATION:
+Jan 12 07:26:26 2021 - DEBUG    DM position of signal:		250.000000
+Jan 12 07:26:26 2021 - DEBUG    Signal start at [samples]:	6250
+Jan 12 07:26:26 2021 - DEBUG    Signal width [samples]:		1250
+Jan 12 07:26:26 2021 - DEBUG    Signal sigma selected:		0.500000
+Jan 12 07:26:26 2021 - DEBUG    Periodicity selected [ms]:	0
+Jan 12 07:26:26 2021 - DEBUG    -------------------------------------------------------------<
+Jan 12 07:26:26 2021 - DEBUG    DDTR STRATEGY INFORMATION:
+Jan 12 07:26:26 2021 - DEBUG    Optimization settings:
+Jan 12 07:26:26 2021 - DEBUG    		UNROLL:			4
+Jan 12 07:26:26 2021 - DEBUG    		SNUMREG:		6
+Jan 12 07:26:26 2021 - DEBUG    		SDIVINT:		12
+Jan 12 07:26:26 2021 - DEBUG    		SDIVINDM:		40
+Jan 12 07:26:26 2021 - DEBUG    ddtr+analysis:		false
+Jan 12 07:26:26 2021 - DEBUG    ddtr dm ranges:		6
+Jan 12 07:26:26 2021 - DEBUG         dm (low,high,step,inBin,outBin) 0.000000,60.800003,0.016000,1,1
+Jan 12 07:26:26 2021 - DEBUG         dm (low,high,step,inBin,outBin) 60.800003,81.480003,0.011000,2,2
+Jan 12 07:26:26 2021 - DEBUG         dm (low,high,step,inBin,outBin) 81.480003,187.320007,0.042000,4,4
+Jan 12 07:26:26 2021 - DEBUG         dm (low,high,step,inBin,outBin) 187.320007,340.400024,0.043000,8,8
+Jan 12 07:26:26 2021 - DEBUG         dm (low,high,step,inBin,outBin) 340.400024,694.000000,0.170000,16,16
+Jan 12 07:26:26 2021 - DEBUG         dm (low,high,step,inBin,outBin) 694.000000,1186.800049,0.160000,32,32
+Jan 12 07:26:26 2021 - DEBUG    ddtr max_ndms:		3800
+Jan 12 07:26:26 2021 - DEBUG    ddtr ndms elements:
+Jan 12 07:26:26 2021 - DEBUG         ndms[0]:		3800
+Jan 12 07:26:26 2021 - DEBUG         ndms[1]:		1880
+Jan 12 07:26:26 2021 - DEBUG         ndms[2]:		2520
+Jan 12 07:26:26 2021 - DEBUG         ndms[3]:		3560
+Jan 12 07:26:26 2021 - DEBUG         ndms[4]:		2080
+Jan 12 07:26:26 2021 - DEBUG         ndms[5]:		3080
+Jan 12 07:26:26 2021 - DEBUG    ddtr maxshift:		396432
+Jan 12 07:26:26 2021 - DEBUG    ddtr num_tchunks:	7
+Jan 12 07:26:26 2021 - DEBUG    ddtr max_ndms:		3800
+Jan 12 07:26:26 2021 - DEBUG    t_processed size:	6
+Jan 12 07:26:26 2021 - DEBUG    t_processed elements:
+Jan 12 07:26:26 2021 - DEBUG         t_processed[0][0]:	59904
+Jan 12 07:26:26 2021 - DEBUG         t_processed[0][1]:	59904
+Jan 12 07:26:26 2021 - DEBUG         t_processed[0][2]:	59904
+Jan 12 07:26:26 2021 - DEBUG         t_processed[0][3]:	59904
+Jan 12 07:26:26 2021 - DEBUG         t_processed[0][4]:	59904
+Jan 12 07:26:26 2021 - DEBUG         t_processed[0][5]:	59904
+Jan 12 07:26:26 2021 - DEBUG         t_processed[0][6]:	23040
+Jan 12 07:26:26 2021 - DEBUG         t_processed[1][0]:	29952
+Jan 12 07:26:26 2021 - DEBUG         t_processed[1][1]:	29952
+Jan 12 07:26:26 2021 - DEBUG         t_processed[1][2]:	29952
+Jan 12 07:26:26 2021 - DEBUG         t_processed[1][3]:	29952
+Jan 12 07:26:26 2021 - DEBUG         t_processed[1][4]:	29952
+Jan 12 07:26:26 2021 - DEBUG         t_processed[1][5]:	29952
+Jan 12 07:26:26 2021 - DEBUG         t_processed[1][6]:	11520
+Jan 12 07:26:26 2021 - DEBUG         t_processed[2][0]:	14976
+Jan 12 07:26:26 2021 - DEBUG         t_processed[2][1]:	14976
+Jan 12 07:26:26 2021 - DEBUG         t_processed[2][2]:	14976
+Jan 12 07:26:26 2021 - DEBUG         t_processed[2][3]:	14976
+Jan 12 07:26:26 2021 - DEBUG         t_processed[2][4]:	14976
+Jan 12 07:26:26 2021 - DEBUG         t_processed[2][5]:	14976
+Jan 12 07:26:26 2021 - DEBUG         t_processed[2][6]:	5760
+Jan 12 07:26:26 2021 - DEBUG         t_processed[3][0]:	7488
+Jan 12 07:26:26 2021 - DEBUG         t_processed[3][1]:	7488
+Jan 12 07:26:26 2021 - DEBUG         t_processed[3][2]:	7488
+Jan 12 07:26:26 2021 - DEBUG         t_processed[3][3]:	7488
+Jan 12 07:26:26 2021 - DEBUG         t_processed[3][4]:	7488
+Jan 12 07:26:26 2021 - DEBUG         t_processed[3][5]:	7488
+Jan 12 07:26:26 2021 - DEBUG         t_processed[3][6]:	2880
+Jan 12 07:26:26 2021 - DEBUG         t_processed[4][0]:	3744
+Jan 12 07:26:26 2021 - DEBUG         t_processed[4][1]:	3744
+Jan 12 07:26:26 2021 - DEBUG         t_processed[4][2]:	3744
+Jan 12 07:26:26 2021 - DEBUG         t_processed[4][3]:	3744
+Jan 12 07:26:26 2021 - DEBUG         t_processed[4][4]:	3744
+Jan 12 07:26:26 2021 - DEBUG         t_processed[4][5]:	3744
+Jan 12 07:26:26 2021 - DEBUG         t_processed[4][6]:	1440
+Jan 12 07:26:26 2021 - DEBUG         t_processed[5][0]:	1872
+Jan 12 07:26:26 2021 - DEBUG         t_processed[5][1]:	1872
+Jan 12 07:26:26 2021 - DEBUG         t_processed[5][2]:	1872
+Jan 12 07:26:26 2021 - DEBUG         t_processed[5][3]:	1872
+Jan 12 07:26:26 2021 - DEBUG         t_processed[5][4]:	1872
+Jan 12 07:26:26 2021 - DEBUG         t_processed[5][5]:	1872
+Jan 12 07:26:26 2021 - DEBUG         t_processed[5][6]:	720
+Jan 12 07:26:26 2021 - DEBUG    power:			2.000000
+Jan 12 07:26:26 2021 - NOTICE   Finished. 1
+Jan 12 07:26:26 2021 - NOTICE   ----------------------------------------------------------------------------------------------------------
+Jan 12 07:26:26 2021 - DEBUG    Generic Pipeline -> Memory cleanup at the end of the pipeline
+Jan 12 07:26:26 2021 - NOTICE   --------------------------------------------------------------
+Jan 12 07:26:26 2021 - NOTICE   Summary of the times for each component and subcomponent [ms]:
+Jan 12 07:26:26 2021 - NOTICE   	DDTR Binning 	2180.037582
+Jan 12 07:26:26 2021 - NOTICE   	DDTR Corner_Turn 	573.297920
+Jan 12 07:26:26 2021 - NOTICE   	DDTR Dedispersion 	4431.199195
+Jan 12 07:26:26 2021 - NOTICE   	DDTR Host_To_Device 	16971.840666
+Jan 12 07:26:26 2021 - NOTICE   	DDTR total 	24157.691402
+Jan 12 07:26:26 2021 - NOTICE   	Total total 	24158.751953
+Jan 12 07:26:26 2021 - NOTICE   	Processed telescope time:	12238.847733
+Jan 12 07:26:26 2021 - NOTICE    
+Jan 12 07:26:26 2021 - NOTICE   	Real-time speed-up factor:	0.506601
+Jan 12 07:26:26 2021 - NOTICE   --------------------------------------------------------------
+chunk 5 / 7 and range 1 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 81.480003	187.320007	0.042000	2520
+
+Amount of telescope time processed: 9.584640
+timesamples: 426384
+
+328.125000
+0.010630
+158
+lineshift:	278
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 5 / 7 and range 2 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 187.320007	340.400024	0.043000	3560
+
+Amount of telescope time processed: 9.584640
+timesamples: 411408
+
+167.968750
+0.010630
+91
+lineshift:	211
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 5 / 7 and range 3 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 340.400024	694.000000	0.170000	2080
+
+Amount of telescope time processed: 9.584640
+timesamples: 403920
+
+332.031250
+0.010630
+159
+lineshift:	279
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 5 / 7 and range 4 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 694.000000	1186.800049	0.160000	3080
+
+Amount of telescope time processed: 9.584640
+timesamples: 400160
+
+156.250000
+0.010630
+86
+lineshift:	206
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 5 / 7 and range 5 / 6.
+
+NOTICE: INC:	359424
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+NOTICE: t_processed:	23040, 6
+CORNER TURN!
+419472 4096
+32 8
+13108 512
+Performed CT: 0.075471 (GPU estimate)
+CT Gops based on 10.00 ops per channel per tsamp: 227.650023
+CT Device memory bandwidth in GB/s: 136.590014
+
+NOTICE: 0.000000	60.800003	0.016000	3800
+
+Amount of telescope time processed: 11.501568
+
+500.000031
+0.010630
+229
+lineshift:	349
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 6 / 7 and range 0 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 60.800003	81.480003	0.011000	1880
+
+Amount of telescope time processed: 11.501568
+timesamples: 419472
+
+171.875000
+0.010630
+93
+lineshift:	213
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 6 / 7 and range 1 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 81.480003	187.320007	0.042000	2520
+
+Amount of telescope time processed: 11.501568
+timesamples: 407952
+
+328.125000
+0.010630
+158
+lineshift:	278
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 6 / 7 and range 2 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 187.320007	340.400024	0.043000	3560
+
+Amount of telescope time processed: 11.501568
+timesamples: 402192
+
+167.968750
+0.010630
+91
+lineshift:	211
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 6 / 7 and range 3 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 340.400024	694.000000	0.170000	2080
+
+Amount of telescope time processed: 11.501568
+timesamples: 399312
+
+332.031250
+0.010630
+159
+lineshift:	279
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 6 / 7 and range 4 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 694.000000	1186.800049	0.160000	3080
+
+Amount of telescope time processed: 11.501568
+timesamples: 397856
+
+156.250000
+0.010630
+86
+lineshift:	206
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 6 / 7 and range 5 / 6.
+
+NOTICE: INC:	382464
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+ === OVERALL DEDISPERSION THROUGHPUT INCLUDING SYNCS AND DATA TRANSFERS ===
+
+(Performed Brute-Force Dedispersion: 24.1588 (GPU estimate)
+Amount of telescope time processed: 12.238848
+Number of samples processed: 382464
+Real-time speedup factor: 0.506601
+NOTICE: Pipeline start/resume run_pipeline_generic.
