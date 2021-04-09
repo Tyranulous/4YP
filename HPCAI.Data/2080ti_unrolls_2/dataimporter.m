@@ -114,9 +114,9 @@ for i = 4:(length(folders)-2)
         
         % temporaty code to remove non full runs, will probably have to
         % change at some point in the future 
-        if size(datain(index).time_logs,1) ~= 275
-            datain(index) = [];
-        end
+%         if size(datain(index).time_logs,1) ~= 275
+%             datain(index) = [];
+%         end
     end
 end
 

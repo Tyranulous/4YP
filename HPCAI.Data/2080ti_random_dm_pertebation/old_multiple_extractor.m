@@ -1,0 +1,48 @@
+function newdata = old_multiple_extractor(data)
+%MULTIPLE_EXTRACTOR Extracts data from new
+%
+newdata = data(1);
+newdata(1) = [];
+index = 1;
+for i = 1:length(data) 
+    %easy base case where we got all the data we're looking for
+    if length(data(i).samples) == 2750
+        for j = 1:10
+            newdata(index).dmplan = data(i).dmplan{j};
+            for k = 1:275
+                l = (k-1)*10+j;
+                newdata(index).time_logs(k,:) = data(i).time_logs(l,:);
+                newdata(index).time(k,:) = data(i).time(l,:);
+                newdata(index).samples(k,:) = data(i).samples(l,:);
+                newdata(index).time_logs(k,:) = data(i).time_logs(l,:);
+                newdata(index).corrected_time(k,:) = data(i).corrected_time(l,:);
+            end
+            newdata(index).central_freq = newdata(index).time_logs(1,6);
+            newdata(index).bw = newdata(index).time_logs(1,9);
+            newdata(index).chans = newdata(index).time_logs(1,8);
+            index = index + 1;
+        end
+    elseif mod(length(data(i).samples),275) == 0
+        len = (length(data(i).samples)/275);
+        for j = 1:len
+            newdata(index).dmplan = data(i).dmplan{j};
+            for k = 1:275
+                l = (k-1)*len+j;
+                newdata(index).time_logs(k,:) = data(i).time_logs(l,:);
+                newdata(index).time(k,:) = data(i).time(l,:);
+                newdata(index).samples(k,:) = data(i).samples(l,:);
+                newdata(index).time_logs(k,:) = data(i).time_logs(l,:);
+                newdata(index).corrected_time(k,:) = data(i).corrected_time(l,:);
+            end
+            newdata(index).central_freq = newdata(index).time_logs(1,6);
+            newdata(index).bw = newdata(index).time_logs(1,9);
+            newdata(index).chans = newdata(index).time_logs(1,8);
+            
+            index = index + 1;
+        end
+        %else
+        %I cba worrying about this for the moment
+    end
+end
+end
+

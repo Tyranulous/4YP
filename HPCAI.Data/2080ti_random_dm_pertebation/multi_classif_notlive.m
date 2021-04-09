@@ -1,0 +1,225 @@
+
+percentage = 30;
+classify_boundary = -1.6;
+
+% [training_datain,validation_datain] = holdback(datain,percentage);
+% [training_datain,validation_datain] = holdback(datain1dm,percentage);
+% extract feature and response data
+[training_full, training_reduced, num_features] = combined_feature_tabler(training_datain);
+[validation_full, validation_reduced, ~] = combined_feature_tabler(validation_datain);
+
+% best_hds = [271;254;269;190;12];%270];
+best_hds = [271;254;269;273;275];
+
+training_classification_multi = multi_classifier(training_full,best_hds);
+validation_classification_multi = multi_classifier(validation_full,best_hds);
+
+% xtc = table2array(training_reduced(:,1:end-1));
+% xvc = table2array(validation_reduced(:,1:end-1));
+
+
+xtc = full_failsafes(training_full);
+xvc = full_failsafes(validation_full);
+
+xtc(isnan(xtc)) = 0;
+xvc(isnan(xvc)) = 0;
+
+%% just 271 network
+
+class_y_loc = num_features - 2;
+
+a1 = table2array(training_reduced);
+training_classification_bin = categorical(a1(:,class_y_loc)>classify_boundary);
+a1 = xtc;
+num_falses = sum(training_classification_bin == 'false')
+num_trues = sum(training_classification_bin == 'true')
+
+if num_trues>num_falses
+    cut = num_trues-num_falses;
+    tlocs = [];
+    for i = 1:length(training_classification_bin)
+        if training_classification_bin(i) == 'true'
+            tlocs = [tlocs;i];
+        end
+    end
+    
+    randy = randperm(length(tlocs),cut);
+    tlocs = tlocs(randy);
+    training_classification_bin(tlocs) = [];
+    a1(tlocs,:) = [];
+        
+end
+
+xtc2 = a1;
+xvc2 = table2array(validation_reduced);
+validation_classification_bin = categorical(xvc2(:,class_y_loc)>classify_boundary);
+%xvc2 = xvc2(:,1:class_y_loc - 1);
+
+
+
+num_class_features = num_features - 3;
+%% 
+
+%plots to 'training-progess'
+trainoptsc = trainingOptions('adam','MaxEpochs',5000, ...
+            'InitialLearnRate',0.00075,'Plots','none', ...
+            'MiniBatchSize',128, 'Shuffle', 'every-epoch', ...
+            'ValidationData',{xvc,validation_classification_bin}, ...
+            'ValidationPatience',4, "Verbose",true, ...
+            'ValidationFrequency',30);
+        
+
+nn_classification_layers = [featureInputLayer(size(xtc2,2))
+                            leakyReluLayer
+                            fullyConnectedLayer(50)
+                            leakyReluLayer
+                            dropoutLayer
+                            fullyConnectedLayer(2)
+                            softmaxLayer
+                            classificationLayer];
+% [cnet_bin2,info] = trainNetwork(xtc2,training_classification_bin,nn_classification_layers,trainoptsc);
+final_accuracy = info.FinalValidationAccuracy
+accuracy_error = info.TrainingAccuracy(end) - info.FinalValidationAccuracy
+
+
+%% one_vs_all classifier
+
+training_one_v_all = ones(length(training_classification_multi),1);
+training_one_v_all(training_classification_multi == '0') = 0;
+training_one_v_all(training_classification_multi == '271') = 271;
+training_one_v_all = categorical(training_one_v_all);
+
+validation_one_v_all = ones(length(validation_classification_multi),1);
+validation_one_v_all(validation_classification_multi == '0') = 0;
+validation_one_v_all(validation_classification_multi == '271') = 271;
+validation_one_v_all = categorical(validation_one_v_all);
+
+trainoptsc = trainingOptions('adam','MaxEpochs',5000, ...
+            'InitialLearnRate',0.001,'Plots','none', ...
+            'MiniBatchSize',128, 'Shuffle', 'every-epoch', ...
+            'ValidationData',{xvc,validation_one_v_all}, ...
+            'ValidationPatience',10, "Verbose",true, ...
+            'ValidationFrequency',30);
+        
+%classLayerDefs = {{'featureInput',num_class_features},{'relu'},...
+%                    {'fullyConnected',5},{'relu'},{'fullyConnected',2},...
+%                    {'softmax'},{'classification'}};
+
+one_v_all_classification_layers = ...
+    [
+        featureInputLayer(size(xtc,2))
+        fullyConnectedLayer(200)
+        leakyReluLayer
+        fullyConnectedLayer(200)
+        leakyReluLayer
+        fullyConnectedLayer(100)
+        leakyReluLayer
+        fullyConnectedLayer(10)
+        leakyReluLayer
+        fullyConnectedLayer(3)
+        softmaxLayer
+        classificationLayer
+    ];
+
+%nn_classification_layers = createClassificationNetwork(classLayerDefs);
+
+[cnet_multi,info] = trainNetwork(xtc,training_one_v_all,one_v_all_classification_layers,trainoptsc);
+final_accuracy = info.FinalValidationAccuracy
+
+%% Multi_classifier
+
+%plots to 'training-progess'
+trainoptsc = trainingOptions('adam','MaxEpochs',5000, ...
+            'InitialLearnRate',0.001,'Plots','none', ...
+            'MiniBatchSize',128, 'Shuffle', 'every-epoch', ...
+            'ValidationData',{xvc,validation_classification_multi}, ...
+            'ValidationPatience',10, "Verbose",true, ...
+            'ValidationFrequency',30);
+        
+%classLayerDefs = {{'featureInput',num_class_features},{'relu'},...
+%                    {'fullyConnected',5},{'relu'},{'fullyConnected',2},...
+%                    {'softmax'},{'classification'}};
+
+multi_classification_layers = ...
+    [
+        featureInputLayer(size(xtc,2))
+        fullyConnectedLayer(200)
+        leakyReluLayer
+        fullyConnectedLayer(200)
+        leakyReluLayer
+        fullyConnectedLayer(100)
+        leakyReluLayer
+        fullyConnectedLayer(10)
+        leakyReluLayer
+        fullyConnectedLayer(length(best_hds)+1)
+        softmaxLayer
+        classificationLayer
+    ];
+
+%nn_classification_layers = createClassificationNetwork(classLayerDefs);
+
+[cnet_multi,info] = trainNetwork(xtc,training_classification_multi,multi_classification_layers,trainoptsc);
+final_accuracy = info.FinalValidationAccuracy
+accuracy_error = info.TrainingAccuracy(end) - info.FinalValidationAccuracy
+
+%% Regression
+
+regression_layers = [
+    featureInputLayer(num_features)%potential to name input features here if it might help
+    fullyConnectedLayer(30)
+    leakyReluLayer
+    fullyConnectedLayer(20)
+    leakyReluLayer
+    dropoutLayer
+    fullyConnectedLayer(10)
+    leakyReluLayer
+    fullyConnectedLayer(20)
+    leakyReluLayer
+    fullyConnectedLayer(10)
+    leakyReluLayer
+    fullyConnectedLayer(1)
+    regressionLayer];
+
+xtr = table2array(training_full(:,1:num_features));
+ytr = table2array(training_full(:,end));
+
+xvr = table2array(validation_full(:,1:num_features));
+yvr = table2array(validation_full(:,end));
+
+yvr = nan_checker(yvr);
+ytr = nan_checker(ytr);
+
+%nan correction
+xtr(isnan(xtr)) = 0;
+xvr(isnan(xvr)) = 0;
+
+%% Regression Netowork Training
+
+%plots to 'training-progess'
+trainoptsr = trainingOptions('adam','MaxEpochs',5000, ...
+            'InitialLearnRate',0.002,'Plots','none', ...
+            'MiniBatchSize',1000, 'Shuffle', 'every-epoch', ...
+            'ValidationData',{xvr,yvr}, 'ValidationPatience',8, ...
+            'ValidationFrequency', 25);
+        
+[rnet, net5info] = trainNetwork(xtr,ytr,regression_layers,trainoptsr)
+%reg_stats = location_statter(simple_pred_hashdefines
+%net = trainNetwork(fullfeatures,values,regression_layers,trainopts);
+
+
+%% Testing performance
+
+%net_stats7 = stats(rnet, validation_datain, validation_full, 2)
+
+[combined_hashdefines_multi, combined_hashdefines_multi_probs]= combined_predictor2(cnet_multi,rnet,table2array(validation_full),xvc,best_hds);
+combined_hashdefines_binary = combined_predictor(cnet_bin,rnet,table2array(validation_full),xvc);
+regression_pred_hashdefines = just_nn_predictor(rnet,table2array(validation_full));
+location_plotter(combined_hashdefines_multi,validation_datain,'multi_class');
+% location_plotter(combined_hashdefines_multi_probs,validation_datain,'multi_class_probabilities');
+location_plotter(combined_hashdefines_binary,validation_datain,'binary_class');
+location_plotter(regression_pred_hashdefines,validation_datain,'regression_only');
+
+reg_stats = location_statter(regression_pred_hashdefines,validation_datain)
+combined_stats_multi = location_statter(combined_hashdefines_multi,validation_datain)
+% combined_stats_multi_probs = location_statter(combined_hashdefines_multi_probs,validation_datain)
+combined_stats_binary = location_statter(combined_hashdefines_binary,validation_datain)

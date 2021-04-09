@@ -32,6 +32,10 @@ divdm_layers = [
     softmaxLayer
     classificationLayer];
 
+% sigmoid as last layer
+% 
+
+
 %{
 divt_layers = [
     featureInputLayer(50)

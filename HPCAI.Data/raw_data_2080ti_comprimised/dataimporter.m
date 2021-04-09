@@ -120,9 +120,9 @@ for i = 4:(length(folders)-2)
     end
 end
 
-for i = 1:length(datain)
-   datain(i).speedup 
-end
+% for i = 1:length(datain)
+%    datain(i).speedup;
+% end
 
             
 %validation(1) = datain(34);
