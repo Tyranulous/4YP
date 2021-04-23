@@ -1,0 +1,998 @@
+Apr  1 16:05:10 2021 - NOTICE   Detected 1 CUDA Capable device(s)
+Apr  1 16:05:10 2021 - NOTICE   Device info 0 free 11391139840 (GeForce RTX 2080 Ti)
+Apr  1 16:05:10 2021 - NOTICE   Checked for devices.
+Apr  1 16:05:10 2021 - NOTICE   Application binary compiled for compute capability 75.
+Apr  1 16:05:10 2021 - NOTICE   The requested device has capability 75 and the device code was compiled for a compatible architecture for the selected card.
+Apr  1 16:05:10 2021 - NOTICE   init_card complete. Selected card 0.
+Apr  1 16:05:10 2021 - DEBUG    CARD INFORMATION:
+Apr  1 16:05:10 2021 - DEBUG    Name:			GeForce RTX 2080 Ti
+Apr  1 16:05:10 2021 - DEBUG    Compute capability:	7.5
+Apr  1 16:05:10 2021 - DEBUG    Clock rate [kHz]:	1650000.000000
+Apr  1 16:05:10 2021 - DEBUG    Memory clock rate [kHz]:	7000000.000000
+Apr  1 16:05:10 2021 - DEBUG    Memory bus width [bits]:	352.000000
+Apr  1 16:05:10 2021 - DEBUG    ID # on this machine:	0
+Apr  1 16:05:10 2021 - DEBUG    Driver version:		11010
+Apr  1 16:05:10 2021 - DEBUG    l2_cache_size [bytes]:	5767168
+Apr  1 16:05:10 2021 - DEBUG    Global memory [bytes]:	11554717696
+Apr  1 16:05:10 2021 - DEBUG    Total memory [bytes]:	11554717696
+Apr  1 16:05:10 2021 - DEBUG    Free memory [bytes]:	11391139840
+Apr  1 16:05:10 2021 - NOTICE   Calculating strategy.
+Apr  1 16:05:10 2021 - DEBUG    Maximum number of dm trials in any of the range steps: 150
+Apr  1 16:05:10 2021 - DEBUG    Range:	0 MAXSHIFT:	966 Scrunch value:	1
+Apr  1 16:05:10 2021 - DEBUG    Maximum dispersive delay:	 0.989184(s).
+Apr  1 16:05:10 2021 - DEBUG    Diagonal DM:	12613.229438
+Apr  1 16:05:10 2021 - DEBUG    In 2
+Apr  1 16:05:10 2021 - NOTICE   The pipeline has reset all previously requested memory on card 0.
+Apr  1 16:05:10 2021 - NOTICE   Calculating strategy.
+Apr  1 16:05:10 2021 - DEBUG    Maximum number of dm trials in any of the range steps: 150
+Apr  1 16:05:10 2021 - DEBUG    Range:	0 MAXSHIFT:	966 Scrunch value:	1
+Apr  1 16:05:10 2021 - DEBUG    Maximum dispersive delay:	 0.989184(s).
+Apr  1 16:05:10 2021 - DEBUG    Diagonal DM:	12613.229438
+Apr  1 16:05:10 2021 - DEBUG    In 2
+Apr  1 16:05:10 2021 - NOTICE   Neither zero_dm nor zero_dm_with_outliers were selected. Selection OFF.
+Apr  1 16:05:10 2021 - NOTICE   ---PIPELINE DIAGNOSTIC INFORMATION---
+Apr  1 16:05:10 2021 - DEBUG    CARD INFORMATION:
+Apr  1 16:05:10 2021 - DEBUG    Name:			GeForce RTX 2080 Ti
+Apr  1 16:05:10 2021 - DEBUG    Compute capability:	7.5
+Apr  1 16:05:10 2021 - DEBUG    Clock rate [kHz]:	1650000.000000
+Apr  1 16:05:10 2021 - DEBUG    Memory clock rate [kHz]:	7000000.000000
+Apr  1 16:05:10 2021 - DEBUG    Memory bus width [bits]:	352.000000
+Apr  1 16:05:10 2021 - DEBUG    ID # on this machine:	0
+Apr  1 16:05:10 2021 - DEBUG    Driver version:		11010
+Apr  1 16:05:10 2021 - DEBUG    l2_cache_size [bytes]:	5767168
+Apr  1 16:05:10 2021 - DEBUG    Global memory [bytes]:	11554717696
+Apr  1 16:05:10 2021 - DEBUG    Total memory [bytes]:	11554717696
+Apr  1 16:05:10 2021 - DEBUG    Free memory [bytes]:	11391139840
+Apr  1 16:05:10 2021 - DEBUG    FILTERBANK METADATA INFORMATION:
+Apr  1 16:05:10 2021 - DEBUG    az_start:		0.000000
+Apr  1 16:05:10 2021 - DEBUG    za_start:		0.000000
+Apr  1 16:05:10 2021 - DEBUG    src_raj:			0.000000
+Apr  1 16:05:10 2021 - DEBUG    src_dej:			0.000000
+Apr  1 16:05:10 2021 - DEBUG    tstart:			50000.000000
+Apr  1 16:05:10 2021 - DEBUG    tsamp:			0.001024
+Apr  1 16:05:10 2021 - DEBUG    refdm:			0.000000
+Apr  1 16:05:10 2021 - DEBUG    period:			0.000000
+Apr  1 16:05:10 2021 - DEBUG    fch1:			1695.000000
+Apr  1 16:05:10 2021 - DEBUG    foff:			-0.043945
+Apr  1 16:05:10 2021 - DEBUG    fchannel:		0.000000
+Apr  1 16:05:10 2021 - DEBUG    telescope_id:		0
+Apr  1 16:05:10 2021 - DEBUG    machine_id:		0
+Apr  1 16:05:10 2021 - DEBUG    data_type:		0
+Apr  1 16:05:10 2021 - DEBUG    barycentric:		0
+Apr  1 16:05:10 2021 - DEBUG    pulsarcentric:		0
+Apr  1 16:05:10 2021 - DEBUG    nbits:			8
+Apr  1 16:05:10 2021 - DEBUG    nsamples:		19531
+Apr  1 16:05:10 2021 - DEBUG    nchans:			2048
+Apr  1 16:05:10 2021 - DEBUG    nifs:			0
+Apr  1 16:05:10 2021 - DEBUG    FREQUENCY_START:		0
+Apr  1 16:05:10 2021 - DEBUG    FREQUENCY_END:		0
+Apr  1 16:05:10 2021 - DEBUG    rawdatafile:		
+Apr  1 16:05:10 2021 - DEBUG    source_name:		
+Apr  1 16:05:10 2021 - DEBUG    N:			0
+Apr  1 16:05:10 2021 - DEBUG    DDTR STRATEGY INFORMATION:
+Apr  1 16:05:10 2021 - DEBUG    Optimization settings:
+Apr  1 16:05:10 2021 - DEBUG    		UNROLL:			4
+Apr  1 16:05:10 2021 - DEBUG    		SNUMREG:		4
+Apr  1 16:05:10 2021 - DEBUG    		SDIVINT:		8
+Apr  1 16:05:10 2021 - DEBUG    		SDIVINDM:		50
+Apr  1 16:05:10 2021 - DEBUG    ddtr+analysis:		false
+Apr  1 16:05:10 2021 - DEBUG    ddtr dm ranges:		1
+Apr  1 16:05:10 2021 - DEBUG         dm (low,high,step,inBin,outBin) 0.000000,5550.000000,37.000000,1,1
+Apr  1 16:05:10 2021 - DEBUG    ddtr max_ndms:		150
+Apr  1 16:05:10 2021 - DEBUG    ddtr ndms elements:
+Apr  1 16:05:10 2021 - DEBUG         ndms[0]:		150
+Apr  1 16:05:10 2021 - DEBUG    ddtr maxshift:		966
+Apr  1 16:05:10 2021 - DEBUG    ddtr num_tchunks:	1
+Apr  1 16:05:10 2021 - DEBUG    ddtr max_ndms:		150
+Apr  1 16:05:10 2021 - DEBUG    t_processed size:	1
+Apr  1 16:05:10 2021 - DEBUG    t_processed elements:
+Apr  1 16:05:10 2021 - DEBUG         t_processed[0][0]:	18560
+Apr  1 16:05:10 2021 - DEBUG    power:			2.000000
+Apr  1 16:05:10 2021 - NOTICE   Pipeline is ready.
+Apr  1 16:05:10 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:10 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:10 2021 - DEBUG    DDTR -> Memory cleanup after de-dispersion
+Apr  1 16:05:10 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:10 2021 - DEBUG    ------------------------------------------------------------->
+Apr  1 16:05:10 2021 - DEBUG    FAKE SIGNAL INFORMATION:
+Apr  1 16:05:10 2021 - DEBUG    DM position of signal:		250.000000
+Apr  1 16:05:10 2021 - DEBUG    Signal start at [samples]:	195
+Apr  1 16:05:10 2021 - DEBUG    Signal width [samples]:		39
+Apr  1 16:05:10 2021 - DEBUG    Signal sigma selected:		0.500000
+Apr  1 16:05:10 2021 - DEBUG    Periodicity selected [ms]:	0
+Apr  1 16:05:10 2021 - DEBUG    -------------------------------------------------------------<
+Apr  1 16:05:10 2021 - DEBUG    DDTR STRATEGY INFORMATION:
+Apr  1 16:05:10 2021 - DEBUG    Optimization settings:
+Apr  1 16:05:10 2021 - DEBUG    		UNROLL:			4
+Apr  1 16:05:10 2021 - DEBUG    		SNUMREG:		4
+Apr  1 16:05:10 2021 - DEBUG    		SDIVINT:		8
+Apr  1 16:05:10 2021 - DEBUG    		SDIVINDM:		50
+Apr  1 16:05:10 2021 - DEBUG    ddtr+analysis:		false
+Apr  1 16:05:10 2021 - DEBUG    ddtr dm ranges:		1
+Apr  1 16:05:10 2021 - DEBUG         dm (low,high,step,inBin,outBin) 0.000000,5550.000000,37.000000,1,1
+Apr  1 16:05:10 2021 - DEBUG    ddtr max_ndms:		150
+Apr  1 16:05:10 2021 - DEBUG    ddtr ndms elements:
+Apr  1 16:05:10 2021 - DEBUG         ndms[0]:		150
+Apr  1 16:05:10 2021 - DEBUG    ddtr maxshift:		966
+Apr  1 16:05:10 2021 - DEBUG    ddtr num_tchunks:	1
+Apr  1 16:05:10 2021 - DEBUG    ddtr max_ndms:		150
+Apr  1 16:05:10 2021 - DEBUG    t_processed size:	1
+Apr  1 16:05:10 2021 - DEBUG    t_processed elements:
+Apr  1 16:05:10 2021 - DEBUG         t_processed[0][0]:	18560
+Apr  1 16:05:10 2021 - DEBUG    power:			2.000000
+Apr  1 16:05:10 2021 - NOTICE   Finished. 1
+Apr  1 16:05:10 2021 - NOTICE   ----------------------------------------------------------------------------------------------------------
+Apr  1 16:05:10 2021 - DEBUG    Generic Pipeline -> Memory cleanup at the end of the pipeline
+Apr  1 16:05:10 2021 - NOTICE   --------------------------------------------------------------
+Apr  1 16:05:10 2021 - NOTICE   Summary of the times for each component and subcomponent [ms]:
+Apr  1 16:05:10 2021 - NOTICE   	DDTR Corner_Turn 	1.671360
+Apr  1 16:05:10 2021 - NOTICE   	DDTR Dedispersion 	4.969888
+Apr  1 16:05:10 2021 - NOTICE   	DDTR Host_To_Device 	52.498658
+Apr  1 16:05:10 2021 - NOTICE   	DDTR total 	59.191520
+Apr  1 16:05:10 2021 - NOTICE   	Total total 	59.248638
+Apr  1 16:05:10 2021 - NOTICE   	Processed telescope time:	19005.439758
+Apr  1 16:05:10 2021 - NOTICE    
+Apr  1 16:05:10 2021 - NOTICE   	Real-time speed-up factor:	320.774289
+Apr  1 16:05:10 2021 - NOTICE   --------------------------------------------------------------
+Apr  1 16:05:10 2021 - NOTICE   Detected 1 CUDA Capable device(s)
+Apr  1 16:05:10 2021 - NOTICE   Device info 0 free 11386945536 (GeForce RTX 2080 Ti)
+Apr  1 16:05:10 2021 - NOTICE   Checked for devices.
+Apr  1 16:05:10 2021 - NOTICE   Application binary compiled for compute capability 75.
+Apr  1 16:05:10 2021 - NOTICE   The requested device has capability 75 and the device code was compiled for a compatible architecture for the selected card.
+Apr  1 16:05:10 2021 - NOTICE   init_card complete. Selected card 0.
+Apr  1 16:05:10 2021 - DEBUG    CARD INFORMATION:
+Apr  1 16:05:10 2021 - DEBUG    Name:			GeForce RTX 2080 Ti
+Apr  1 16:05:10 2021 - DEBUG    Compute capability:	7.5
+Apr  1 16:05:10 2021 - DEBUG    Clock rate [kHz]:	1650000.000000
+Apr  1 16:05:10 2021 - DEBUG    Memory clock rate [kHz]:	7000000.000000
+Apr  1 16:05:10 2021 - DEBUG    Memory bus width [bits]:	352.000000
+Apr  1 16:05:10 2021 - DEBUG    ID # on this machine:	0
+Apr  1 16:05:10 2021 - DEBUG    Driver version:		11010
+Apr  1 16:05:10 2021 - DEBUG    l2_cache_size [bytes]:	5767168
+Apr  1 16:05:10 2021 - DEBUG    Global memory [bytes]:	11554717696
+Apr  1 16:05:10 2021 - DEBUG    Total memory [bytes]:	11554717696
+Apr  1 16:05:10 2021 - DEBUG    Free memory [bytes]:	11386945536
+Apr  1 16:05:10 2021 - NOTICE   Calculating strategy.
+Apr  1 16:05:10 2021 - DEBUG    Maximum number of dm trials in any of the range steps: 4200
+Apr  1 16:05:10 2021 - DEBUG    Range:	0 MAXSHIFT:	4495 Scrunch value:	1
+Apr  1 16:05:10 2021 - DEBUG    Maximum dispersive delay:	 1.150720(s).
+Apr  1 16:05:10 2021 - DEBUG    Diagonal DM:	3044.373870
+Apr  1 16:05:10 2021 - DEBUG    In 1
+Apr  1 16:05:10 2021 - NOTICE   The pipeline has reset all previously requested memory on card 0.
+Apr  1 16:05:10 2021 - NOTICE   Calculating strategy.
+Apr  1 16:05:10 2021 - DEBUG    Maximum number of dm trials in any of the range steps: 4200
+Apr  1 16:05:10 2021 - DEBUG    Range:	0 MAXSHIFT:	4495 Scrunch value:	1
+Apr  1 16:05:10 2021 - DEBUG    Maximum dispersive delay:	 1.150720(s).
+Apr  1 16:05:10 2021 - DEBUG    Diagonal DM:	3044.373870
+Apr  1 16:05:10 2021 - DEBUG    In 1
+Apr  1 16:05:10 2021 - NOTICE   Neither zero_dm nor zero_dm_with_outliers were selected. Selection OFF.
+Apr  1 16:05:10 2021 - NOTICE   ---PIPELINE DIAGNOSTIC INFORMATION---
+Apr  1 16:05:10 2021 - DEBUG    CARD INFORMATION:
+Apr  1 16:05:10 2021 - DEBUG    Name:			GeForce RTX 2080 Ti
+Apr  1 16:05:10 2021 - DEBUG    Compute capability:	7.5
+Apr  1 16:05:10 2021 - DEBUG    Clock rate [kHz]:	1650000.000000
+Apr  1 16:05:10 2021 - DEBUG    Memory clock rate [kHz]:	7000000.000000
+Apr  1 16:05:10 2021 - DEBUG    Memory bus width [bits]:	352.000000
+Apr  1 16:05:10 2021 - DEBUG    ID # on this machine:	0
+Apr  1 16:05:10 2021 - DEBUG    Driver version:		11010
+Apr  1 16:05:10 2021 - DEBUG    l2_cache_size [bytes]:	5767168
+Apr  1 16:05:10 2021 - DEBUG    Global memory [bytes]:	11554717696
+Apr  1 16:05:10 2021 - DEBUG    Total memory [bytes]:	11554717696
+Apr  1 16:05:10 2021 - DEBUG    Free memory [bytes]:	11386945536
+Apr  1 16:05:10 2021 - DEBUG    FILTERBANK METADATA INFORMATION:
+Apr  1 16:05:10 2021 - DEBUG    az_start:		0.000000
+Apr  1 16:05:10 2021 - DEBUG    za_start:		0.000000
+Apr  1 16:05:10 2021 - DEBUG    src_raj:			0.000000
+Apr  1 16:05:10 2021 - DEBUG    src_dej:			0.000000
+Apr  1 16:05:10 2021 - DEBUG    tstart:			50000.000000
+Apr  1 16:05:10 2021 - DEBUG    tsamp:			0.000256
+Apr  1 16:05:10 2021 - DEBUG    refdm:			0.000000
+Apr  1 16:05:10 2021 - DEBUG    period:			0.000000
+Apr  1 16:05:10 2021 - DEBUG    fch1:			1685.000000
+Apr  1 16:05:10 2021 - DEBUG    foff:			-0.041504
+Apr  1 16:05:10 2021 - DEBUG    fchannel:		0.000000
+Apr  1 16:05:10 2021 - DEBUG    telescope_id:		0
+Apr  1 16:05:10 2021 - DEBUG    machine_id:		0
+Apr  1 16:05:10 2021 - DEBUG    data_type:		0
+Apr  1 16:05:10 2021 - DEBUG    barycentric:		0
+Apr  1 16:05:10 2021 - DEBUG    pulsarcentric:		0
+Apr  1 16:05:10 2021 - DEBUG    nbits:			8
+Apr  1 16:05:10 2021 - DEBUG    nsamples:		78125
+Apr  1 16:05:10 2021 - DEBUG    nchans:			4096
+Apr  1 16:05:10 2021 - DEBUG    nifs:			0
+Apr  1 16:05:10 2021 - DEBUG    FREQUENCY_START:		0
+Apr  1 16:05:10 2021 - DEBUG    FREQUENCY_END:		0
+Apr  1 16:05:10 2021 - DEBUG    rawdatafile:		
+Apr  1 16:05:10 2021 - DEBUG    source_name:		
+Apr  1 16:05:10 2021 - DEBUG    N:			0
+Apr  1 16:05:10 2021 - DEBUG    DDTR STRATEGY INFORMATION:
+Apr  1 16:05:10 2021 - DEBUG    Optimization settings:
+Apr  1 16:05:10 2021 - DEBUG    		UNROLL:			4
+Apr  1 16:05:10 2021 - DEBUG    		SNUMREG:		4
+Apr  1 16:05:10 2021 - DEBUG    		SDIVINT:		8
+Apr  1 16:05:10 2021 - DEBUG    		SDIVINDM:		50
+Apr  1 16:05:10 2021 - DEBUG    ddtr+analysis:		false
+Apr  1 16:05:10 2021 - DEBUG    ddtr dm ranges:		1
+Apr  1 16:05:10 2021 - DEBUG         dm (low,high,step,inBin,outBin) 0.000000,3276.000000,0.780000,1,1
+Apr  1 16:05:10 2021 - DEBUG    ddtr max_ndms:		4200
+Apr  1 16:05:10 2021 - DEBUG    ddtr ndms elements:
+Apr  1 16:05:10 2021 - DEBUG         ndms[0]:		4200
+Apr  1 16:05:10 2021 - DEBUG    ddtr maxshift:		4495
+Apr  1 16:05:10 2021 - DEBUG    ddtr num_tchunks:	1
+Apr  1 16:05:10 2021 - DEBUG    ddtr max_ndms:		4200
+Apr  1 16:05:10 2021 - DEBUG    t_processed size:	1
+Apr  1 16:05:10 2021 - DEBUG    t_processed elements:
+Apr  1 16:05:10 2021 - DEBUG         t_processed[0][0]:	73600
+Apr  1 16:05:10 2021 - DEBUG    power:			2.000000
+Apr  1 16:05:10 2021 - NOTICE   Pipeline is ready.
+Apr  1 16:05:10 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:11 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:11 2021 - DEBUG    DDTR -> Memory cleanup after de-dispersion
+Apr  1 16:05:11 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:11 2021 - DEBUG    ------------------------------------------------------------->
+Apr  1 16:05:11 2021 - DEBUG    FAKE SIGNAL INFORMATION:
+Apr  1 16:05:11 2021 - DEBUG    DM position of signal:		250.000000
+Apr  1 16:05:11 2021 - DEBUG    Signal start at [samples]:	781
+Apr  1 16:05:11 2021 - DEBUG    Signal width [samples]:		156
+Apr  1 16:05:11 2021 - DEBUG    Signal sigma selected:		0.500000
+Apr  1 16:05:11 2021 - DEBUG    Periodicity selected [ms]:	0
+Apr  1 16:05:11 2021 - DEBUG    -------------------------------------------------------------<
+Apr  1 16:05:11 2021 - DEBUG    DDTR STRATEGY INFORMATION:
+Apr  1 16:05:11 2021 - DEBUG    Optimization settings:
+Apr  1 16:05:11 2021 - DEBUG    		UNROLL:			4
+Apr  1 16:05:11 2021 - DEBUG    		SNUMREG:		4
+Apr  1 16:05:11 2021 - DEBUG    		SDIVINT:		8
+Apr  1 16:05:11 2021 - DEBUG    		SDIVINDM:		50
+Apr  1 16:05:11 2021 - DEBUG    ddtr+analysis:		false
+Apr  1 16:05:11 2021 - DEBUG    ddtr dm ranges:		1
+Apr  1 16:05:11 2021 - DEBUG         dm (low,high,step,inBin,outBin) 0.000000,3276.000000,0.780000,1,1
+Apr  1 16:05:11 2021 - DEBUG    ddtr max_ndms:		4200
+Apr  1 16:05:11 2021 - DEBUG    ddtr ndms elements:
+Apr  1 16:05:11 2021 - DEBUG         ndms[0]:		4200
+Apr  1 16:05:11 2021 - DEBUG    ddtr maxshift:		4495
+Apr  1 16:05:11 2021 - DEBUG    ddtr num_tchunks:	1
+Apr  1 16:05:11 2021 - DEBUG    ddtr max_ndms:		4200
+Apr  1 16:05:11 2021 - DEBUG    t_processed size:	1
+Apr  1 16:05:11 2021 - DEBUG    t_processed elements:
+Apr  1 16:05:11 2021 - DEBUG         t_processed[0][0]:	73600
+Apr  1 16:05:11 2021 - DEBUG    power:			2.000000
+Apr  1 16:05:11 2021 - NOTICE   Finished. 1
+Apr  1 16:05:11 2021 - NOTICE   ----------------------------------------------------------------------------------------------------------
+Apr  1 16:05:11 2021 - DEBUG    Generic Pipeline -> Memory cleanup at the end of the pipeline
+Apr  1 16:05:11 2021 - NOTICE   --------------------------------------------------------------
+Apr  1 16:05:11 2021 - NOTICE   Summary of the times for each component and subcomponent [ms]:
+Apr  1 16:05:11 2021 - NOTICE   	DDTR Corner_Turn 	13.981632
+Apr  1 16:05:11 2021 - NOTICE   	DDTR Dedispersion 	749.272217
+Apr  1 16:05:11 2021 - NOTICE   	DDTR Host_To_Device 	418.920493
+Apr  1 16:05:11 2021 - NOTICE   	DDTR total 	1182.219727
+Apr  1 16:05:11 2021 - NOTICE   	Total total 	1182.276367
+Apr  1 16:05:11 2021 - NOTICE   	Processed telescope time:	18841.600418
+Apr  1 16:05:11 2021 - NOTICE    
+Apr  1 16:05:11 2021 - NOTICE   	Real-time speed-up factor:	15.936714
+Apr  1 16:05:11 2021 - NOTICE   --------------------------------------------------------------
+Apr  1 16:05:11 2021 - NOTICE   Detected 1 CUDA Capable device(s)
+Apr  1 16:05:11 2021 - NOTICE   Device info 0 free 11386945536 (GeForce RTX 2080 Ti)
+Apr  1 16:05:11 2021 - NOTICE   Checked for devices.
+Apr  1 16:05:11 2021 - NOTICE   Application binary compiled for compute capability 75.
+Apr  1 16:05:11 2021 - NOTICE   The requested device has capability 75 and the device code was compiled for a compatible architecture for the selected card.
+Apr  1 16:05:11 2021 - NOTICE   init_card complete. Selected card 0.
+Apr  1 16:05:11 2021 - DEBUG    CARD INFORMATION:
+Apr  1 16:05:11 2021 - DEBUG    Name:			GeForce RTX 2080 Ti
+Apr  1 16:05:11 2021 - DEBUG    Compute capability:	7.5
+Apr  1 16:05:11 2021 - DEBUG    Clock rate [kHz]:	1650000.000000
+Apr  1 16:05:11 2021 - DEBUG    Memory clock rate [kHz]:	7000000.000000
+Apr  1 16:05:11 2021 - DEBUG    Memory bus width [bits]:	352.000000
+Apr  1 16:05:11 2021 - DEBUG    ID # on this machine:	0
+Apr  1 16:05:11 2021 - DEBUG    Driver version:		11010
+Apr  1 16:05:11 2021 - DEBUG    l2_cache_size [bytes]:	5767168
+Apr  1 16:05:11 2021 - DEBUG    Global memory [bytes]:	11554717696
+Apr  1 16:05:11 2021 - DEBUG    Total memory [bytes]:	11554717696
+Apr  1 16:05:11 2021 - DEBUG    Free memory [bytes]:	11386945536
+Apr  1 16:05:11 2021 - NOTICE   Calculating strategy.
+Apr  1 16:05:11 2021 - DEBUG    Maximum number of dm trials in any of the range steps: 850
+Apr  1 16:05:11 2021 - DEBUG    Range:	5 MAXSHIFT:	208960 Scrunch value:	32
+Apr  1 16:05:11 2021 - DEBUG    Maximum dispersive delay:	 13.373440(s).
+Apr  1 16:05:11 2021 - DEBUG    Diagonal DM:	7.524170
+Apr  1 16:05:11 2021 - DEBUG    In 2
+Apr  1 16:05:12 2021 - NOTICE   The pipeline has reset all previously requested memory on card 0.
+Apr  1 16:05:12 2021 - NOTICE   Calculating strategy.
+Apr  1 16:05:12 2021 - DEBUG    Maximum number of dm trials in any of the range steps: 850
+Apr  1 16:05:12 2021 - DEBUG    Range:	5 MAXSHIFT:	208960 Scrunch value:	32
+Apr  1 16:05:12 2021 - DEBUG    Maximum dispersive delay:	 13.373440(s).
+Apr  1 16:05:12 2021 - DEBUG    Diagonal DM:	7.524170
+Apr  1 16:05:12 2021 - DEBUG    In 2
+Apr  1 16:05:12 2021 - NOTICE   Neither zero_dm nor zero_dm_with_outliers were selected. Selection OFF.
+Apr  1 16:05:12 2021 - NOTICE   ---PIPELINE DIAGNOSTIC INFORMATION---
+Apr  1 16:05:12 2021 - DEBUG    CARD INFORMATION:
+Apr  1 16:05:12 2021 - DEBUG    Name:			GeForce RTX 2080 Ti
+Apr  1 16:05:12 2021 - DEBUG    Compute capability:	7.5
+Apr  1 16:05:12 2021 - DEBUG    Clock rate [kHz]:	1650000.000000
+Apr  1 16:05:12 2021 - DEBUG    Memory clock rate [kHz]:	7000000.000000
+Apr  1 16:05:12 2021 - DEBUG    Memory bus width [bits]:	352.000000
+Apr  1 16:05:12 2021 - DEBUG    ID # on this machine:	0
+Apr  1 16:05:12 2021 - DEBUG    Driver version:		11010
+Apr  1 16:05:12 2021 - DEBUG    l2_cache_size [bytes]:	5767168
+Apr  1 16:05:12 2021 - DEBUG    Global memory [bytes]:	11554717696
+Apr  1 16:05:12 2021 - DEBUG    Total memory [bytes]:	11554717696
+Apr  1 16:05:12 2021 - DEBUG    Free memory [bytes]:	11386945536
+Apr  1 16:05:12 2021 - DEBUG    FILTERBANK METADATA INFORMATION:
+Apr  1 16:05:12 2021 - DEBUG    az_start:		0.000000
+Apr  1 16:05:12 2021 - DEBUG    za_start:		0.000000
+Apr  1 16:05:12 2021 - DEBUG    src_raj:			0.000000
+Apr  1 16:05:12 2021 - DEBUG    src_dej:			0.000000
+Apr  1 16:05:12 2021 - DEBUG    tstart:			50000.000000
+Apr  1 16:05:12 2021 - DEBUG    tsamp:			0.000064
+Apr  1 16:05:12 2021 - DEBUG    refdm:			0.000000
+Apr  1 16:05:12 2021 - DEBUG    period:			0.000000
+Apr  1 16:05:12 2021 - DEBUG    fch1:			395.000000
+Apr  1 16:05:12 2021 - DEBUG    foff:			-0.043945
+Apr  1 16:05:12 2021 - DEBUG    fchannel:		0.000000
+Apr  1 16:05:12 2021 - DEBUG    telescope_id:		0
+Apr  1 16:05:12 2021 - DEBUG    machine_id:		0
+Apr  1 16:05:12 2021 - DEBUG    data_type:		0
+Apr  1 16:05:12 2021 - DEBUG    barycentric:		0
+Apr  1 16:05:12 2021 - DEBUG    pulsarcentric:		0
+Apr  1 16:05:12 2021 - DEBUG    nbits:			8
+Apr  1 16:05:12 2021 - DEBUG    nsamples:		312500
+Apr  1 16:05:12 2021 - DEBUG    nchans:			2048
+Apr  1 16:05:12 2021 - DEBUG    nifs:			0
+Apr  1 16:05:12 2021 - DEBUG    FREQUENCY_START:		0
+Apr  1 16:05:12 2021 - DEBUG    FREQUENCY_END:		0
+Apr  1 16:05:12 2021 - DEBUG    rawdatafile:		
+Apr  1 16:05:12 2021 - DEBUG    source_name:		
+Apr  1 16:05:12 2021 - DEBUG    N:			0
+Apr  1 16:05:12 2021 - DEBUG    DDTR STRATEGY INFORMATION:
+Apr  1 16:05:12 2021 - DEBUG    Optimization settings:
+Apr  1 16:05:12 2021 - DEBUG    		UNROLL:			4
+Apr  1 16:05:12 2021 - DEBUG    		SNUMREG:		4
+Apr  1 16:05:12 2021 - DEBUG    		SDIVINT:		8
+Apr  1 16:05:12 2021 - DEBUG    		SDIVINDM:		50
+Apr  1 16:05:12 2021 - DEBUG    ddtr+analysis:		false
+Apr  1 16:05:12 2021 - DEBUG    ddtr dm ranges:		6
+Apr  1 16:05:12 2021 - DEBUG         dm (low,high,step,inBin,outBin) 0.000000,33.150002,0.039000,1,1
+Apr  1 16:05:12 2021 - DEBUG         dm (low,high,step,inBin,outBin) 33.150002,44.850002,0.039000,2,2
+Apr  1 16:05:12 2021 - DEBUG         dm (low,high,step,inBin,outBin) 44.850002,104.850006,0.120000,4,4
+Apr  1 16:05:12 2021 - DEBUG         dm (low,high,step,inBin,outBin) 104.850006,190.350006,0.190000,8,8
+Apr  1 16:05:12 2021 - DEBUG         dm (low,high,step,inBin,outBin) 190.350006,385.350006,0.390000,16,16
+Apr  1 16:05:12 2021 - DEBUG         dm (low,high,step,inBin,outBin) 385.350006,736.349976,0.780000,32,32
+Apr  1 16:05:12 2021 - DEBUG    ddtr max_ndms:		850
+Apr  1 16:05:12 2021 - DEBUG    ddtr ndms elements:
+Apr  1 16:05:12 2021 - DEBUG         ndms[0]:		850
+Apr  1 16:05:12 2021 - DEBUG         ndms[1]:		300
+Apr  1 16:05:12 2021 - DEBUG         ndms[2]:		500
+Apr  1 16:05:12 2021 - DEBUG         ndms[3]:		450
+Apr  1 16:05:12 2021 - DEBUG         ndms[4]:		500
+Apr  1 16:05:12 2021 - DEBUG         ndms[5]:		450
+Apr  1 16:05:12 2021 - DEBUG    ddtr maxshift:		208960
+Apr  1 16:05:12 2021 - DEBUG    ddtr num_tchunks:	1
+Apr  1 16:05:12 2021 - DEBUG    ddtr max_ndms:		850
+Apr  1 16:05:12 2021 - DEBUG    t_processed size:	6
+Apr  1 16:05:12 2021 - DEBUG    t_processed elements:
+Apr  1 16:05:12 2021 - DEBUG         t_processed[0][0]:	102400
+Apr  1 16:05:12 2021 - DEBUG         t_processed[1][0]:	51200
+Apr  1 16:05:12 2021 - DEBUG         t_processed[2][0]:	25600
+Apr  1 16:05:12 2021 - DEBUG         t_processed[3][0]:	12800
+Apr  1 16:05:12 2021 - DEBUG         t_processed[4][0]:	6400
+Apr  1 16:05:12 2021 - DEBUG         t_processed[5][0]:	3200
+Apr  1 16:05:12 2021 - DEBUG    power:			2.000000
+Apr  1 16:05:12 2021 - NOTICE   Pipeline is ready.
+Apr  1 16:05:12 2021 - NOTICE   Pipeline running over next chunk.
+gpu_memory: 11286282240. Maximum number of tsamp: 918480. SPDT: 0 max_ndms: 150
+output_sizePer_chunk: 7524188160
+After check tsamp_max: 918480
+
+NOTICE: Maxshift memory needed:	3 MB.
+NOTICE: Output memory needed:	7 MB.
+gpu_memory: 11286282240. Maximum number of tsamp: 918480. SPDT: 0 max_ndms: 150
+output_sizePer_chunk: 7524188160
+After check tsamp_max: 918480
+
+NOTICE: Maxshift memory needed:	3 MB.
+NOTICE: Output memory needed:	7 MB.
+
+
+Memory allocation for the DDTR
+Number of time samples: 18560;
+maxshift: 966
+Number of time samples + maxshift: 19526;
+Number of channels: 2048
+Maximum number of DM-trials: 150;
+Available memory: 11386945536 bytes = 10859.438 MB;
+DDTR input size: 79978496 bytes = 76.273 MB;
+DDTR output size:  159956992 bytes = 152.547 MB;
+Total memory required: 239935488 bytes = 228.820 MB;
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+NOTICE: t_processed:	18560, 0
+CORNER TURN!
+19526 2048
+32 8
+610 256
+Performed CT: 0.001642 (GPU estimate)
+CT Gops based on 10.00 ops per channel per tsamp: 243.472154
+CT Device memory bandwidth in GB/s: 146.083293
+
+NOTICE: 0.000000	5550.000000	37.000000	150
+
+Amount of telescope time processed: 0.000000
+
+36132.812500
+0.000166
+308
+lineshift:	356
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 1 and range 0 / 1.
+
+NOTICE: INC:	18560
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+ === OVERALL DEDISPERSION THROUGHPUT INCLUDING SYNCS AND DATA TRANSFERS ===
+
+(Performed Brute-Force Dedispersion: 0.0592486 (GPU estimate)
+Amount of telescope time processed: 19.005440
+Number of samples processed: 18560
+Real-time speedup factor: 320.774292
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+NOTICE: Maxshift memory needed:	35 MB.
+NOTICE: Output memory needed:	72 MB.
+NOTICE: Maxshift memory needed:	35 MB.
+NOTICE: Output memory needed:	72 MB.
+
+Memory allocation for the DDTR
+Number of time samples: 73600;
+maxshift: 4495
+Number of time samples + maxshift: 78095;
+Number of channels: 4096
+Maximum number of DM-trials: 4200;
+Available memory: 11386945536 bytes = 10859.438 MB;
+DDTR input size: 639754240 bytes = 610.117 MB;
+DDTR output size:  1311996000 bytes = 1251.217 MB;
+Total memory required: 1951750240 bytes = 1861.334 MB;
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+NOTICE: t_processed:	73600, 0
+CORNER TURN!
+78095 4096
+32 8
+2440 512
+Performed CT: 0.013963 (GPU estimate)
+CT Gops based on 10.00 ops per channel per tsamp: 229.040767
+CT Device memory bandwidth in GB/s: 137.424460
+
+NOTICE: 0.000000	3276.000000	0.780000	4200
+
+Amount of telescope time processed: 0.000000
+
+3046.875000
+0.000346
+65
+lineshift:	113
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 1 and range 0 / 1.
+
+NOTICE: INC:	73600
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+ === OVERALL DEDISPERSION THROUGHPUT INCLUDING SYNCS AND DATA TRANSFERS ===
+
+(Performed Brute-Force Dedispersion: 1.18228 (GPU estimate)
+Amount of telescope time processed: 18.841600
+Number of samples processed: 73600
+Real-time speedup factor: 15.936714
+NOTICE: Pipeline start/resume run_pipeline_generic.
+gpu_memory: 11282087936. Maximum number of tsamp: 918138. SPDT: 0 max_ndms: 850
+output_sizePer_chunk: 7521386496
+After check tsamp_max: 918138
+
+NOTICE: Maxshift memory needed:	816 MB.
+NOTICE: Output memory needed:	1632 MB.
+gpu_memory: 11282087936. Maximum number of tsamp: 918138. SPDT: 0 max_ndms: 850
+output_sizePer_chunk: 7521386496
+After check tsamp_max: 918138
+
+NOTICE: Maxshift memory needed:	816 MB.
+NOTICE: Output memory needed:	1632 MB.
+
+
+Memory allocation for the DDTR
+Number of time samples: 102400;
+maxshift: 208960
+Number of time samples + maxshift: 311360;
+Number of channels: 2048
+Maximum number of DM-trials: 850;
+Available memory: 11386945536 bytes = 10859.438 MB;
+DDTR input size: 1275330560 bytes = 1216.250 MB;
+DDTR output size:  2550661120 bytes = 2432.500 MB;
+Total memory required: 3825991680 bytes = 3648.750 MB;
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+NOTICE: t_processed:	102400, 0
+CORNER TURN!
+311360 2048
+32 8
+973Apr  1 16:05:13 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:13 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:13 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:13 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:13 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:13 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:13 2021 - DEBUG    DDTR -> Memory cleanup after de-dispersion
+Apr  1 16:05:13 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:13 2021 - DEBUG    ------------------------------------------------------------->
+Apr  1 16:05:13 2021 - DEBUG    FAKE SIGNAL INFORMATION:
+Apr  1 16:05:13 2021 - DEBUG    DM position of signal:		250.000000
+Apr  1 16:05:13 2021 - DEBUG    Signal start at [samples]:	3125
+Apr  1 16:05:13 2021 - DEBUG    Signal width [samples]:		625
+Apr  1 16:05:13 2021 - DEBUG    Signal sigma selected:		0.500000
+Apr  1 16:05:13 2021 - DEBUG    Periodicity selected [ms]:	0
+Apr  1 16:05:13 2021 - DEBUG    -------------------------------------------------------------<
+Apr  1 16:05:13 2021 - DEBUG    DDTR STRATEGY INFORMATION:
+Apr  1 16:05:13 2021 - DEBUG    Optimization settings:
+Apr  1 16:05:13 2021 - DEBUG    		UNROLL:			4
+Apr  1 16:05:13 2021 - DEBUG    		SNUMREG:		4
+Apr  1 16:05:13 2021 - DEBUG    		SDIVINT:		8
+Apr  1 16:05:13 2021 - DEBUG    		SDIVINDM:		50
+Apr  1 16:05:13 2021 - DEBUG    ddtr+analysis:		false
+Apr  1 16:05:13 2021 - DEBUG    ddtr dm ranges:		6
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 0.000000,33.150002,0.039000,1,1
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 33.150002,44.850002,0.039000,2,2
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 44.850002,104.850006,0.120000,4,4
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 104.850006,190.350006,0.190000,8,8
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 190.350006,385.350006,0.390000,16,16
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 385.350006,736.349976,0.780000,32,32
+Apr  1 16:05:13 2021 - DEBUG    ddtr max_ndms:		850
+Apr  1 16:05:13 2021 - DEBUG    ddtr ndms elements:
+Apr  1 16:05:13 2021 - DEBUG         ndms[0]:		850
+Apr  1 16:05:13 2021 - DEBUG         ndms[1]:		300
+Apr  1 16:05:13 2021 - DEBUG         ndms[2]:		500
+Apr  1 16:05:13 2021 - DEBUG         ndms[3]:		450
+Apr  1 16:05:13 2021 - DEBUG         ndms[4]:		500
+Apr  1 16:05:13 2021 - DEBUG         ndms[5]:		450
+Apr  1 16:05:13 2021 - DEBUG    ddtr maxshift:		208960
+Apr  1 16:05:13 2021 - DEBUG    ddtr num_tchunks:	1
+Apr  1 16:05:13 2021 - DEBUG    ddtr max_ndms:		850
+Apr  1 16:05:13 2021 - DEBUG    t_processed size:	6
+Apr  1 16:05:13 2021 - DEBUG    t_processed elements:
+Apr  1 16:05:13 2021 - DEBUG         t_processed[0][0]:	102400
+Apr  1 16:05:13 2021 - DEBUG         t_processed[1][0]:	51200
+Apr  1 16:05:13 2021 - DEBUG         t_processed[2][0]:	25600
+Apr  1 16:05:13 2021 - DEBUG         t_processed[3][0]:	12800
+Apr  1 16:05:13 2021 - DEBUG         t_processed[4][0]:	6400
+Apr  1 16:05:13 2021 - DEBUG         t_processed[5][0]:	3200
+Apr  1 16:05:13 2021 - DEBUG    power:			2.000000
+Apr  1 16:05:13 2021 - NOTICE   Finished. 1
+Apr  1 16:05:13 2021 - NOTICE   ----------------------------------------------------------------------------------------------------------
+Apr  1 16:05:13 2021 - DEBUG    Generic Pipeline -> Memory cleanup at the end of the pipeline
+Apr  1 16:05:13 2021 - NOTICE   --------------------------------------------------------------
+Apr  1 16:05:13 2021 - NOTICE   Summary of the times for each component and subcomponent [ms]:
+Apr  1 16:05:13 2021 - NOTICE   	DDTR Binning 	92.357697
+Apr  1 16:05:13 2021 - NOTICE   	DDTR Corner_Turn 	28.320415
+Apr  1 16:05:13 2021 - NOTICE   	DDTR Dedispersion 	374.996695
+Apr  1 16:05:13 2021 - NOTICE   	DDTR Host_To_Device 	834.948566
+Apr  1 16:05:13 2021 - NOTICE   	DDTR total 	1330.814844
+Apr  1 16:05:13 2021 - NOTICE   	Total total 	1330.956543
+Apr  1 16:05:13 2021 - NOTICE   	Processed telescope time:	6553.599834
+Apr  1 16:05:13 2021 - NOTICE    
+Apr  1 16:05:13 2021 - NOTICE   	Real-time speed-up factor:	4.923977
+Apr  1 16:05:13 2021 - NOTICE   --------------------------------------------------------------
+Apr  1 16:05:13 2021 - NOTICE   Detected 1 CUDA Capable device(s)
+Apr  1 16:05:13 2021 - NOTICE   Device info 0 free 11386945536 (GeForce RTX 2080 Ti)
+Apr  1 16:05:13 2021 - NOTICE   Checked for devices.
+Apr  1 16:05:13 2021 - NOTICE   Application binary compiled for compute capability 75.
+Apr  1 16:05:13 2021 - NOTICE   The requested device has capability 75 and the device code was compiled for a compatible architecture for the selected card.
+Apr  1 16:05:13 2021 - NOTICE   init_card complete. Selected card 0.
+Apr  1 16:05:13 2021 - DEBUG    CARD INFORMATION:
+Apr  1 16:05:13 2021 - DEBUG    Name:			GeForce RTX 2080 Ti
+Apr  1 16:05:13 2021 - DEBUG    Compute capability:	7.5
+Apr  1 16:05:13 2021 - DEBUG    Clock rate [kHz]:	1650000.000000
+Apr  1 16:05:13 2021 - DEBUG    Memory clock rate [kHz]:	7000000.000000
+Apr  1 16:05:13 2021 - DEBUG    Memory bus width [bits]:	352.000000
+Apr  1 16:05:13 2021 - DEBUG    ID # on this machine:	0
+Apr  1 16:05:13 2021 - DEBUG    Driver version:		11010
+Apr  1 16:05:13 2021 - DEBUG    l2_cache_size [bytes]:	5767168
+Apr  1 16:05:13 2021 - DEBUG    Global memory [bytes]:	11554717696
+Apr  1 16:05:13 2021 - DEBUG    Total memory [bytes]:	11554717696
+Apr  1 16:05:13 2021 - DEBUG    Free memory [bytes]:	11386945536
+Apr  1 16:05:13 2021 - NOTICE   Calculating strategy.
+Apr  1 16:05:13 2021 - DEBUG    Maximum number of dm trials in any of the range steps: 1450
+Apr  1 16:05:13 2021 - DEBUG    Range:	5 MAXSHIFT:	34880 Scrunch value:	32
+Apr  1 16:05:13 2021 - DEBUG    Maximum dispersive delay:	 2.232320(s).
+Apr  1 16:05:13 2021 - DEBUG    Diagonal DM:	47.107847
+Apr  1 16:05:13 2021 - DEBUG    In 1
+Apr  1 16:05:13 2021 - NOTICE   The pipeline has reset all previously requested memory on card 0.
+Apr  1 16:05:13 2021 - NOTICE   Calculating strategy.
+Apr  1 16:05:13 2021 - DEBUG    Maximum number of dm trials in any of the range steps: 1450
+Apr  1 16:05:13 2021 - DEBUG    Range:	5 MAXSHIFT:	34880 Scrunch value:	32
+Apr  1 16:05:13 2021 - DEBUG    Maximum dispersive delay:	 2.232320(s).
+Apr  1 16:05:13 2021 - DEBUG    Diagonal DM:	47.107847
+Apr  1 16:05:13 2021 - DEBUG    In 1
+Apr  1 16:05:13 2021 - NOTICE   Neither zero_dm nor zero_dm_with_outliers were selected. Selection OFF.
+Apr  1 16:05:13 2021 - NOTICE   ---PIPELINE DIAGNOSTIC INFORMATION---
+Apr  1 16:05:13 2021 - DEBUG    CARD INFORMATION:
+Apr  1 16:05:13 2021 - DEBUG    Name:			GeForce RTX 2080 Ti
+Apr  1 16:05:13 2021 - DEBUG    Compute capability:	7.5
+Apr  1 16:05:13 2021 - DEBUG    Clock rate [kHz]:	1650000.000000
+Apr  1 16:05:13 2021 - DEBUG    Memory clock rate [kHz]:	7000000.000000
+Apr  1 16:05:13 2021 - DEBUG    Memory bus width [bits]:	352.000000
+Apr  1 16:05:13 2021 - DEBUG    ID # on this machine:	0
+Apr  1 16:05:13 2021 - DEBUG    Driver version:		11010
+Apr  1 16:05:13 2021 - DEBUG    l2_cache_size [bytes]:	5767168
+Apr  1 16:05:13 2021 - DEBUG    Global memory [bytes]:	11554717696
+Apr  1 16:05:13 2021 - DEBUG    Total memory [bytes]:	11554717696
+Apr  1 16:05:13 2021 - DEBUG    Free memory [bytes]:	11386945536
+Apr  1 16:05:13 2021 - DEBUG    FILTERBANK METADATA INFORMATION:
+Apr  1 16:05:13 2021 - DEBUG    az_start:		0.000000
+Apr  1 16:05:13 2021 - DEBUG    za_start:		0.000000
+Apr  1 16:05:13 2021 - DEBUG    src_raj:			0.000000
+Apr  1 16:05:13 2021 - DEBUG    src_dej:			0.000000
+Apr  1 16:05:13 2021 - DEBUG    tstart:			50000.000000
+Apr  1 16:05:13 2021 - DEBUG    tsamp:			0.000064
+Apr  1 16:05:13 2021 - DEBUG    refdm:			0.000000
+Apr  1 16:05:13 2021 - DEBUG    period:			0.000000
+Apr  1 16:05:13 2021 - DEBUG    fch1:			1515.000000
+Apr  1 16:05:13 2021 - DEBUG    foff:			-0.449219
+Apr  1 16:05:13 2021 - DEBUG    fchannel:		0.000000
+Apr  1 16:05:13 2021 - DEBUG    telescope_id:		0
+Apr  1 16:05:13 2021 - DEBUG    machine_id:		0
+Apr  1 16:05:13 2021 - DEBUG    data_type:		0
+Apr  1 16:05:13 2021 - DEBUG    barycentric:		0
+Apr  1 16:05:13 2021 - DEBUG    pulsarcentric:		0
+Apr  1 16:05:13 2021 - DEBUG    nbits:			8
+Apr  1 16:05:13 2021 - DEBUG    nsamples:		312500
+Apr  1 16:05:13 2021 - DEBUG    nchans:			512
+Apr  1 16:05:13 2021 - DEBUG    nifs:			0
+Apr  1 16:05:13 2021 - DEBUG    FREQUENCY_START:		0
+Apr  1 16:05:13 2021 - DEBUG    FREQUENCY_END:		0
+Apr  1 16:05:13 2021 - DEBUG    rawdatafile:		
+Apr  1 16:05:13 2021 - DEBUG    source_name:		
+Apr  1 16:05:13 2021 - DEBUG    N:			0
+Apr  1 16:05:13 2021 - DEBUG    DDTR STRATEGY INFORMATION:
+Apr  1 16:05:13 2021 - DEBUG    Optimization settings:
+Apr  1 16:05:13 2021 - DEBUG    		UNROLL:			4
+Apr  1 16:05:13 2021 - DEBUG    		SNUMREG:		4
+Apr  1 16:05:13 2021 - DEBUG    		SDIVINT:		8
+Apr  1 16:05:13 2021 - DEBUG    		SDIVINDM:		50
+Apr  1 16:05:13 2021 - DEBUG    ddtr+analysis:		false
+Apr  1 16:05:13 2021 - DEBUG    ddtr dm ranges:		6
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 0.000000,188.500000,0.130000,1,1
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 188.500000,298.500000,0.200000,2,2
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 298.500000,529.500000,0.330000,4,4
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 529.500000,1024.500000,0.660000,8,8
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 1024.500000,2624.500000,2.000000,16,16
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 2624.500000,3119.500000,3.300000,32,32
+Apr  1 16:05:13 2021 - DEBUG    ddtr max_ndms:		1450
+Apr  1 16:05:13 2021 - DEBUG    ddtr ndms elements:
+Apr  1 16:05:13 2021 - DEBUG         ndms[0]:		1450
+Apr  1 16:05:13 2021 - DEBUG         ndms[1]:		550
+Apr  1 16:05:13 2021 - DEBUG         ndms[2]:		700
+Apr  1 16:05:13 2021 - DEBUG         ndms[3]:		750
+Apr  1 16:05:13 2021 - DEBUG         ndms[4]:		800
+Apr  1 16:05:13 2021 - DEBUG         ndms[5]:		150
+Apr  1 16:05:13 2021 - DEBUG    ddtr maxshift:		34880
+Apr  1 16:05:13 2021 - DEBUG    ddtr num_tchunks:	1
+Apr  1 16:05:13 2021 - DEBUG    ddtr max_ndms:		1450
+Apr  1 16:05:13 2021 - DEBUG    t_processed size:	6
+Apr  1 16:05:13 2021 - DEBUG    t_processed elements:
+Apr  1 16:05:13 2021 - DEBUG         t_processed[0][0]:	276480
+Apr  1 16:05:13 2021 - DEBUG         t_processed[1][0]:	138240
+Apr  1 16:05:13 2021 - DEBUG         t_processed[2][0]:	69120
+Apr  1 16:05:13 2021 - DEBUG         t_processed[3][0]:	34560
+Apr  1 16:05:13 2021 - DEBUG         t_processed[4][0]:	17280
+Apr  1 16:05:13 2021 - DEBUG         t_processed[5][0]:	8640
+Apr  1 16:05:13 2021 - DEBUG    power:			2.000000
+Apr  1 16:05:13 2021 - NOTICE   Pipeline is ready.
+Apr  1 16:05:13 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:13 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:13 2021 - NOTICE   Pipeline running over next chunk.
+0 256
+Performed CT: 0.028282 (GPU estimate)
+CT Gops based on 10.00 ops per channel per tsamp: 225.466952
+CT Device memory bandwidth in GB/s: 135.280171
+
+NOTICE: 0.000000	33.150002	0.039000	850
+
+Amount of telescope time processed: 0.000000
+
+609.375000
+0.017995
+551
+lineshift:	599
+ERROR: smem line length is too short.
+Run the auto tuner again!
+
+Using fallback failsafe kernel
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 1 and range 0 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 33.150002	44.850002	0.039000	300
+
+Amount of telescope time processed: 0.000000
+timesamples: 311360
+
+304.687500
+0.017995
+282
+lineshift:	330
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 1 and range 1 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 44.850002	104.850006	0.120000	500
+
+Amount of telescope time processed: 0.000000
+timesamples: 260160
+
+468.750000
+0.017995
+427
+lineshift:	475
+ERROR: smem line length is too short.
+Run the auto tuner again!
+
+Using fallback failsafe kernel
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 1 and range 2 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 104.850006	190.350006	0.190000	450
+
+Amount of telescope time processed: 0.000000
+timesamples: 234560
+
+371.093750
+0.017995
+341
+lineshift:	389
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 1 and range 3 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 190.350006	385.350006	0.390000	500
+
+Amount of telescope time processed: 0.000000
+timesamples: 221760
+
+380.859375
+0.017995
+349
+lineshift:	397
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 1 and range 4 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 385.350006	736.349976	0.780000	450
+
+Amount of telescope time processed: 0.000000
+timesamples: 215360
+
+380.859375
+0.017995
+349
+lineshift:	397
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 1 and range 5 / 6.
+
+NOTICE: INC:	102400
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+ === OVERALL DEDISPERSION THROUGHPUT INCLUDING SYNCS AND DATA TRANSFERS ===
+
+(Performed Brute-Force Dedispersion: 1.33096 (GPU estimate)
+Amount of telescope time processed: 6.553600
+Number of samples processed: 102400
+Real-time speedup factor: 4.923977
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+NOTICE: Maxshift memory needed:	34 MB.
+NOTICE: Output memory needed:	192 MB.
+NOTICE: Maxshift memory needed:	34 MB.
+NOTICE: Output memory needed:	192 MB.
+
+Memory allocation for the DDTR
+Number of time samples: 276480;
+maxshift: 34880
+Number of time samples + maxshift: 311360;
+Number of channels: 512
+Maximum number of DM-trials: 1450;
+Available memory: 11386945536 bytes = 10859.438 MB;
+DDTR input size: 318832640 bytes = 304.062 MB;
+DDTR output size:  1805888000 bytes = 1722.229 MB;
+Total memory required: 2124720640 bytes = 2026.292 MB;
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+NOTICE: t_processed:	276480, 0
+CORNER TURN!
+311360 512
+32 8
+9730 64
+Performed CT: 0.006692 (GPU estimate)
+CT Gops based on 10.00 ops per channel per tsamp: 238.212410
+CT Device memory bandwidth in GB/s: 142.927446
+
+NOTICE: 0.000000	188.500000	0.130000	1450
+
+Amount of telescope time processed: 0.000000
+
+2031.249878
+0.000703
+83
+lineshift:	131
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 1 and range 0 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 188.500000	298.500000	0.200000	550
+
+Amount of telescope time processed: 0.000000
+timesamples: 311360
+
+1562.500000
+0.000703
+67
+lineshift:	115
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 1 and range 1 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 298.500000	529.500000	0.330000	700
+
+Amount of telescope time processed: 0.000000
+timesamples: 173120
+
+1289.062500
+0.000703
+58
+lineshift:	106
+Using fast shared memory kernel 8-bitApr  1 16:05:13 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:13 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:13 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:13 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:13 2021 - DEBUG    DDTR -> Memory cleanup after de-dispersion
+Apr  1 16:05:13 2021 - NOTICE   Pipeline running over next chunk.
+Apr  1 16:05:13 2021 - DEBUG    ------------------------------------------------------------->
+Apr  1 16:05:13 2021 - DEBUG    FAKE SIGNAL INFORMATION:
+Apr  1 16:05:13 2021 - DEBUG    DM position of signal:		250.000000
+Apr  1 16:05:13 2021 - DEBUG    Signal start at [samples]:	3125
+Apr  1 16:05:13 2021 - DEBUG    Signal width [samples]:		625
+Apr  1 16:05:13 2021 - DEBUG    Signal sigma selected:		0.500000
+Apr  1 16:05:13 2021 - DEBUG    Periodicity selected [ms]:	0
+Apr  1 16:05:13 2021 - DEBUG    -------------------------------------------------------------<
+Apr  1 16:05:13 2021 - DEBUG    DDTR STRATEGY INFORMATION:
+Apr  1 16:05:13 2021 - DEBUG    Optimization settings:
+Apr  1 16:05:13 2021 - DEBUG    		UNROLL:			4
+Apr  1 16:05:13 2021 - DEBUG    		SNUMREG:		4
+Apr  1 16:05:13 2021 - DEBUG    		SDIVINT:		8
+Apr  1 16:05:13 2021 - DEBUG    		SDIVINDM:		50
+Apr  1 16:05:13 2021 - DEBUG    ddtr+analysis:		false
+Apr  1 16:05:13 2021 - DEBUG    ddtr dm ranges:		6
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 0.000000,188.500000,0.130000,1,1
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 188.500000,298.500000,0.200000,2,2
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 298.500000,529.500000,0.330000,4,4
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 529.500000,1024.500000,0.660000,8,8
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 1024.500000,2624.500000,2.000000,16,16
+Apr  1 16:05:13 2021 - DEBUG         dm (low,high,step,inBin,outBin) 2624.500000,3119.500000,3.300000,32,32
+Apr  1 16:05:13 2021 - DEBUG    ddtr max_ndms:		1450
+Apr  1 16:05:13 2021 - DEBUG    ddtr ndms elements:
+Apr  1 16:05:13 2021 - DEBUG         ndms[0]:		1450
+Apr  1 16:05:13 2021 - DEBUG         ndms[1]:		550
+Apr  1 16:05:13 2021 - DEBUG         ndms[2]:		700
+Apr  1 16:05:13 2021 - DEBUG         ndms[3]:		750
+Apr  1 16:05:13 2021 - DEBUG         ndms[4]:		800
+Apr  1 16:05:13 2021 - DEBUG         ndms[5]:		150
+Apr  1 16:05:13 2021 - DEBUG    ddtr maxshift:		34880
+Apr  1 16:05:13 2021 - DEBUG    ddtr num_tchunks:	1
+Apr  1 16:05:13 2021 - DEBUG    ddtr max_ndms:		1450
+Apr  1 16:05:13 2021 - DEBUG    t_processed size:	6
+Apr  1 16:05:13 2021 - DEBUG    t_processed elements:
+Apr  1 16:05:13 2021 - DEBUG         t_processed[0][0]:	276480
+Apr  1 16:05:13 2021 - DEBUG         t_processed[1][0]:	138240
+Apr  1 16:05:13 2021 - DEBUG         t_processed[2][0]:	69120
+Apr  1 16:05:13 2021 - DEBUG         t_processed[3][0]:	34560
+Apr  1 16:05:13 2021 - DEBUG         t_processed[4][0]:	17280
+Apr  1 16:05:13 2021 - DEBUG         t_processed[5][0]:	8640
+Apr  1 16:05:13 2021 - DEBUG    power:			2.000000
+Apr  1 16:05:13 2021 - NOTICE   Finished. 1
+Apr  1 16:05:13 2021 - NOTICE   ----------------------------------------------------------------------------------------------------------
+Apr  1 16:05:13 2021 - DEBUG    Generic Pipeline -> Memory cleanup at the end of the pipeline
+Apr  1 16:05:13 2021 - NOTICE   --------------------------------------------------------------
+Apr  1 16:05:13 2021 - NOTICE   Summary of the times for each component and subcomponent [ms]:
+Apr  1 16:05:13 2021 - NOTICE   	DDTR Binning 	13.262624
+Apr  1 16:05:13 2021 - NOTICE   	DDTR Corner_Turn 	6.710592
+Apr  1 16:05:13 2021 - NOTICE   	DDTR Dedispersion 	173.987326
+Apr  1 16:05:13 2021 - NOTICE   	DDTR Host_To_Device 	208.874661
+Apr  1 16:05:13 2021 - NOTICE   	DDTR total 	403.019007
+Apr  1 16:05:13 2021 - NOTICE   	Total total 	403.159027
+Apr  1 16:05:13 2021 - NOTICE   	Processed telescope time:	17694.719315
+Apr  1 16:05:13 2021 - NOTICE    
+Apr  1 16:05:13 2021 - NOTICE   	Real-time speed-up factor:	43.890173
+Apr  1 16:05:13 2021 - NOTICE   --------------------------------------------------------------
+Apr  1 16:05:13 2021 - NOTICE   Detected 1 CUDA Capable device(s)
+Apr  1 16:05:13 2021 - NOTICE   Device info 0 free 11386945536 (GeForce RTX 2080 Ti)
+Apr  1 16:05:13 2021 - NOTICE   Checked for devices.
+Apr  1 16:05:13 2021 - NOTICE   Application binary compiled for compute capability 75.
+Apr  1 16:05:13 2021 - NOTICE   The requested device has capability 75 and the device code was compiled for a compatible architecture for the selected card.
+Apr  1 16:05:13 2021 - NOTICE   init_card complete. Selected card 0.
+Apr  1 16:05:13 2021 - DEBUG    CARD INFORMATION:
+Apr  1 16:05:13 2021 - DEBUG    Name:			GeForce RTX 2080 Ti
+Apr  1 16:05:13 2021 - DEBUG    Compute capability:	7.5
+Apr  1 16:05:13 2021 - DEBUG    Clock rate [kHz]:	1650000.000000
+Apr  1 16:05:13 2021 - DEBUG    Memory clock rate [kHz]:	7000000.000000
+Apr  1 16:05:13 2021 - DEBUG    Memory bus width [bits]:	352.000000
+Apr  1 16:05:13 2021 - DEBUG    ID # on this machine:	0
+Apr  1 16:05:13 2021 - DEBUG    Driver version:		11010
+Apr  1 16:05:13 2021 - DEBUG    l2_cache_size [bytes]:	5767168
+Apr  1 16:05:13 2021 - DEBUG    Global memory [bytes]:	11554717696
+Apr  1 16:05:13 2021 - DEBUG    Total memory [bytes]:	11554717696
+Apr  1 16:05:13 2021 - DEBUG    Free memory [bytes]:	11386945536
+Apr  1 16:05:13 2021 - NOTICE   Calculating strategy.
+Apr  1 16:05:13 2021 - DEBUG    Maximum number of dm trials in any of the range steps: 800
+Apr  1 16:05:13 2021 - DEBUG    Range:	5 MAXSHIFT:	43072 Scrunch value:	32
+Apr  1 16:05:13 2021 - DEBUG    Maximum dispersive delay:	 22.052864(s).
+Apr  1 16:05:13 2021 - ERROR    Your maximum DM trial exceeds the number of samples you have. Reduce your maximum DM trial.
+
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 1 and range 2 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 529.500000	1024.500000	0.660000	750
+
+Amount of telescope time processed: 0.000000
+timesamples: 104000
+
+1289.062500
+0.000703
+58
+lineshift:	106
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 1 and range 3 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 1024.500000	2624.500000	2.000000	800
+
+Amount of telescope time processed: 0.000000
+timesamples: 69440
+
+1953.125000
+0.000703
+81
+lineshift:	129
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 1 and range 4 / 6.
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+NOTICE: 2624.500000	3119.500000	3.300000	150
+
+Amount of telescope time processed: 0.000000
+timesamples: 52160
+
+1611.328125
+0.000703
+69
+lineshift:	117
+Using fast shared memory kernel 8-bit
+NOTICE: Pipeline ended run_pipeline_generic over chunk 0 / 1 and range 5 / 6.
+
+NOTICE: INC:	276480
+NOTICE: Pipeline start/resume run_pipeline_generic.
+
+
+ === OVERALL DEDISPERSION THROUGHPUT INCLUDING SYNCS AND DATA TRANSFERS ===
+
+(Performed Brute-Force Dedispersion: 0.403159 (GPU estimate)
+Amount of telescope time processed: 17.694719
+Number of samples processed: 276480
+Real-time speedup factor: 43.890175
+NOTICE: Pipeline start/resume run_pipeline_generic.
+There was an error
