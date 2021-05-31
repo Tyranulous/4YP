@@ -14,6 +14,13 @@ Due to the raw and somewhat badly labelled nature of these data, it is recommend
 Additionally, some subsection of the results are broken but kept for reference and future investigation into why. 
 If the *matlab* branch is used, the erroneous data has been removed already.
 
+## Dataset Creation
+
+If you want to replicate the generation of the dataset, the files *chans-profile.txt*, *autotune_test.cpp*, *DDplan_rand_edit.py* and *profiling-autotune-updating.sh* from the ./Scripts folder on master of this repo must be combined with the *jn_autotune* branch from [astroaccelerate](https://github.com/AstroAccelerateOrg/astro-accelerate). Replace *autotune_test.cpp* in astroaccelerate/examples/src and adding the other 3 files to the build folder (which should be created when building the AstroAccelerate software).
+*Note that the files will have to be edited to correct paths for your system.*
+A further file must be added to the build folder which describes which telescope configurations to test, this is created through matlab using the [*input_generator.m*](https://github.com/Tyranulous/4YP/blob/9cb74f35807d039bfb3311a750106d2077ea7fa6/HPCAI.Data/2080ti_random_dm_pertebation/input_generator.m) file. 
+If astroaccelerate is built, and everything works, running _./profiling-autotune-updating.sh chans-profile.txt_ should run AstroAccelerate and record and move resulting log files containing data on how it ran using the selection of 275 sets of parameters.
+
 
 ## Scripts
 
