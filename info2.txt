@@ -1,0 +1,192 @@
+XDG_SESSION_ID=8933
+HOSTNAME=crius
+SELINUX_ROLE_REQUESTED=
+SHELL=/bin/bash
+TERM=xterm
+HISTSIZE=1000
+CUDA_DEVICE_ORDER=PCI_BUS_ID
+SSH_CLIENT=129.67.118.216 62034 22
+SELINUX_USE_CURRENT_RANGE=
+SSH_TTY=/dev/pts/0
+USER=USER
+CUDA_HOME=/usr/local/cuda
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+LD_LIBRARY_PATH=:/usr/local/cuda/lib64
+PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/USER/.local/bin:/home/USER/bin:/home/USER/bin:/usr/local/cuda/bin
+MAIL=/var/spool/mail/USER
+_=/usr/bin/env
+PWD=/home/USER/specs
+LANG=en_US.UTF-8
+SELINUX_LEVEL_REQUESTED=
+HISTCONTROL=ignoredups
+HOME=/home/USER
+SHLVL=2
+PRESTO=/USER/HPC-AI-4YP/branch/presto
+LOGNAME=USER
+SSH_CONNECTION=129.67.118.216 62034 129.67.194.150 22
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+DISPLAY=129.67.194.150:10.0
+XDG_RUNTIME_DIR=/run/user/1005
++ lsb_release -a
+./data_collection.sh: line 9: lsb_release: command not found
++ uname -a
+Linux crius 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
++ lscpu
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                8
+On-line CPU(s) list:   0-7
+Thread(s) per core:    2
+Core(s) per socket:    4
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 60
+Model name:            Intel(R) Core(TM) i7-4770K CPU @ 3.50GHz
+Stepping:              3
+CPU MHz:               3000.335
+CPU max MHz:           4200.0000
+CPU min MHz:           800.0000
+BogoMIPS:              7000.20
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              8192K
+NUMA node0 CPU(s):     0-7
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm invpcid_single ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt dtherm ida arat pln pts md_clear spec_ctrl intel_stibp flush_l1d
++ cat /proc/meminfo
+MemTotal:       16315788 kB
+MemFree:         1969684 kB
+MemAvailable:   14488396 kB
+Buffers:            2144 kB
+Cached:         11236552 kB
+SwapCached:            0 kB
+Active:          5062240 kB
+Inactive:        6256852 kB
+Active(anon):     109328 kB
+Inactive(anon):    46000 kB
+Active(file):    4952912 kB
+Inactive(file):  6210852 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       8191996 kB
+SwapFree:        8191996 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:         81072 kB
+Mapped:            48072 kB
+Shmem:             74932 kB
+Slab:            2057104 kB
+SReclaimable:    1694192 kB
+SUnreclaim:       362912 kB
+KernelStack:        3280 kB
+PageTables:         6280 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    16349888 kB
+Committed_AS:     364788 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      377032 kB
+VmallocChunk:   34358947836 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:     10240 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      433696 kB
+DirectMap2M:    12034048 kB
+DirectMap1G:     4194304 kB
++ inxi -F -c0
+./data_collection.sh: line 13: inxi: command not found
++ lsblk -a
+NAME            MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda               8:0    0 931.5G  0 disk 
+├─sda1            8:1    0     1G  0 part /boot
+└─sda2            8:2    0 930.5G  0 part 
+  ├─centos-root 253:0    0    50G  0 lvm  /
+  ├─centos-swap 253:1    0   7.8G  0 lvm  [SWAP]
+  └─centos-home 253:2    0 872.7G  0 lvm  /home
+sdb               8:16   1         0 disk 
+sdc               8:32   1         0 disk 
+sdd               8:48   1         0 disk 
+sde               8:64   1         0 disk 
+sr0              11:0    1  1024M  0 rom  
++ lsscsi -s
+[0:0:0:0]    cd/dvd  TSSTcorp CDDVDW SH-224DB  SB01  /dev/sr0        -
+[1:0:0:0]    disk    ATA      ST1000DX001-1CM1 CC43  /dev/sda   1.00TB
+[2:0:0:0]    disk    Generic- SD/MMC           1.00  /dev/sdb        -
+[2:0:0:1]    disk    Generic- Compact Flash    1.01  /dev/sdc        -
+[2:0:0:2]    disk    Generic- SM/xD-Picture    1.02  /dev/sdd        -
+[2:0:0:3]    disk    Generic- MS/MS-Pro        1.03  /dev/sde        -
++ module list
+./data_collection.sh: line 16: module: command not found
++ nvidia-smi
+Mon May 31 11:46:33 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 455.23.05    Driver Version: 455.23.05    CUDA Version: 11.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GeForce RTX 208...  Off  | 00000000:05:00.0 Off |                  N/A |
+| 16%   43C    P0    25W / 260W |      0MiB / 11019MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
++ lshw -short -quiet -sanitize
++ cat
+WARNING: you should run this program as super-user.
+H/W path         Device  Class          Description
+===================================================
+                         system         Computer
+/0                       bus            Motherboard
+/0/0                     memory         16GiB System memory
+/0/1                     processor      Intel(R) Core(TM) i7-4770K CPU @ 3.50GHz
+/0/100                   bridge         4th Gen Core Processor DRAM Controller
+/0/100/2                 display        Xeon E3-1200 v3/4th Gen Core Processor Integrated Graphics Controller
+/0/100/3                 multimedia     Xeon E3-1200 v3/4th Gen Core Processor HD Audio Controller
+/0/100/14                bus            8 Series/C220 Series Chipset Family USB xHCI
+/0/100/16                communication  8 Series/C220 Series Chipset Family MEI Controller #1
+/0/100/1a                bus            8 Series/C220 Series Chipset Family USB EHCI #2
+/0/100/1b                multimedia     8 Series/C220 Series Chipset High Definition Audio Controller
+/0/100/1c                bridge         8 Series/C220 Series Chipset Family PCI Express Root Port #1
+/0/100/1c.2              bridge         8 Series/C220 Series Chipset Family PCI Express Root Port #3
+/0/100/1c.2/0    enp2s0  network        RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller
+/0/100/1c.3              bridge         82801 PCI Bridge
+/0/100/1c.3/0            bridge         82801 PCI Bridge
+/0/100/1c.4              bridge         8 Series/C220 Series Chipset Family PCI Express Root Port #5
+/0/100/1c.4/0            display        TU102 [GeForce RTX 2080 Ti Rev. A]
+/0/100/1c.4/0.1          multimedia     TU102 High Definition Audio Controller
+/0/100/1c.4/0.2          bus            TU102 USB 3.1 Controller
+/0/100/1c.4/0.3          bus            TU102 UCSI Controller
+/0/100/1d                bus            8 Series/C220 Series Chipset Family USB EHCI #1
+/0/100/1f                bridge         Z87 Express LPC Controller
+/0/100/1f.3              bus            8 Series/C220 Series Chipset Family SMBus Controller
+/0/100/1f.5              storage        8 Series/C220 Series Chipset Family 2-port SATA Controller 2 [IDE mode]
+/0/2                     system         PnP device PNP0c01
+/0/3                     system         PnP device PNP0c02
+/0/4                     system         PnP device PNP0b00
+/0/5                     generic        PnP device INT3f0d
+/0/6                     system         PnP device PNP0c02
+/0/7                     communication  PnP device PNP0501
+/0/8                     printer        PnP device PNP0400
+/0/9                     system         PnP device PNP0c02
+/0/a                     system         PnP device PNP0c02
+/1               scsi2   storage        
+WARNING: output may be incomplete or inaccurate, you should run this program as super-user.
